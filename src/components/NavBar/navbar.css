@@ -5,126 +5,63 @@
 .navbar.colorChange {
   background-color: white;
 }
-.navTransition{
-  transition: ease-in 0.8s;
-}
+
 
 .transition {
   transition: ease-out 0.3s;
 }
 
-.nav-link{
-  padding-right: 2rem;
+nav ul {
+  list-style: none;
+  text-align: center;
+} 
+
+.nav-link {
+  padding-right: 5rem;
   font-size: large;
+  color: white;
 }
 
 .nav-item {
   padding-right: 3rem;
+  padding-left: 3rem;
   font-family: "Manrope";
-}
-
-.navbarCustom {
-  background-color: red;
-}
-nav ul {
-  list-style: none;
-  text-align: center;
-}
-
-nav ul li {
-  margin: 0 10px;
-  color: white;
-}
-nav ul li .nav-link,
-nav ul li .nav-link:after,
-nav ul li .nav-link:before {
-  /* transition: all 0.3s; */
-}
-nav ul li .nav-link:hover {
-  color: #555;
-}
-
-.nav-link {
-  position: relative;
-  z-index: 1;
-}
-.nav-link:hover {
-  color: #91640f;
-}
-
-nav.shift ul li .nav-link:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
+  cursor: pointer;
 }
 
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: white;
 }
 
 .hover-underline-animation:after {
   content: "";
   position: absolute;
-  width: 60%;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
   transform: scaleX(0);
-  height: 10%;
+  height: 6%;
   bottom: 0;
   left: 0;
   background-color: #ff7000;
-  transform-origin: bottom left;
+  /* transform-origin: bottom left; */
+  transform-origin: top;
   transition: transform 0.25s ease-out;
 }
 
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
+  transform-origin: top;
+  /* transform-origin: bottom left; */
+}
+
+.hover-underline-animation1:after{ 
+  transform: scaleX(1);
+  transform-origin: top;
   transform-origin: bottom left;
-}
-
-@-webkit-keyframes fill {
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #333;
-  }
-}
-
-@-webkit-keyframes circle {
-  0% {
-    width: 1px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    height: 1px;
-    z-index: -1;
-    background: #eee;
-    border-radius: 100%;
-  }
-  100% {
-    background: #aaa;
-    height: 5000%;
-    width: 5000%;
-    z-index: -1;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 0;
-  }
-}
-
-nav.stroke ul li a {
-  position: relative;
 }
