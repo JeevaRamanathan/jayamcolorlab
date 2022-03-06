@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import NavBar from "../NavBar/NavBar";
 import Slider from "../Carousel/Slider";
+import Lottie from "lottie-react"; 
+import camera from "../lotties/camera";
+import movieCamera from "../lotties/movie-camera";
+import editor from "../lotties/editor";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import {
@@ -26,19 +31,32 @@ export default class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar />
-        <Slider/>
-       
-        
-        <div style={{  height: "100vh" }}></div>
-        <div className="card">
-  <img className="card-img-top" src="..." alt="Card image cap"/>
-  <div className="card-body">
-    <h5 className="card-title">Card title</h5>
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+        <NavBar active={"home"} />
+        <Slider />
+
+        <div style={{ height: "100vh" }}></div>
+        <div className="container mt-5">
+          {" "}
+          <h4 className="welcometext">Our Services</h4>
+          <div className="row d-flex justify-content-center justify-content-center">
+            
+            <div className="col-sm"><Lottie animationData={camera} loop={true}  style={{
+              width: 230,
+              height: 230
+              
+            }}/></div>
+            <div className="col-sm"><Lottie animationData={movieCamera} style={{
+              width: 230,
+              height: 230
+              
+            }} loop={true} /></div>
+            <div className="col-sm"><Lottie animationData={editor} style={{
+              width: 230,
+              height: 230
+              
+            }} loop={true} /></div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }

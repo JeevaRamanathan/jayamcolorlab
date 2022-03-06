@@ -2,8 +2,6 @@ import React, { Component, useEffect, useState } from "react";
 import "./Slider.css";
 import BtnSlider from "./BtnSlider";
 import dataSlider from "./dataSlider";
-import NavBar from "../NavBar/NavBar";
-import { Nav } from "../NavBar/NavbarStyles";
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
 
@@ -27,18 +25,18 @@ export default function Slider() {
     setSlideIndex(index);
   };
 
-  //   setInterval(() => {
-  //       let ind = slideIndex + 1;
-  //       if (slideIndex === dataSlider.length) {
-  //         setSlideIndex(1);
-  //       } else {
-  //         setSlideIndex(ind);
-  //       }
-  //     }, 10000);
+  // },[])
+  // setInterval(() => {
+  //     let ind = slideIndex + 1;
+  //     if (slideIndex === dataSlider.length) {
+  //       setSlideIndex(1);
+  //     } else {
+  //       setSlideIndex(ind);
+  //     }
+  //   }, 10000);
 
   return (
     <div>
-
       {dataSlider.map((obj, index) => {
         return (
           <div
@@ -49,24 +47,19 @@ export default function Slider() {
           </div>
         );
       })}
-      {/* <BtnSlider moveSlide={nextSlide} direction={"next"} /> */}
-      {/* <BtnSlider moveSlide={prevSlide} direction={"prev"} /> */}
-      <p className="slider-text">
-        fbdf efb Node.js is the prerequisite for creating the react appS
-        codde.js is the prerequisite for creating the react app and VS code is
-        for writing your code. e is for writing your code.{" "}
-      </p>
+      {/* post${index + 1} */}
+      <BtnSlider moveSlide={nextSlide} direction={"next"} />
+      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      <p className="slider-text"></p>
 
       <div className="container-dots" style={{ cursor: "pointer" }}>
-        {Array.from({ length: 3 }).map((item, index) => (
+        {Array.from({ length: dataSlider.length }).map((item, index) => (
           <div
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? "dot active" : "dot"}
           ></div>
         ))}
       </div>
-   
     </div>
-
   );
 }

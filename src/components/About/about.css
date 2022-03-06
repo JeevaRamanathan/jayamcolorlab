@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@100;700&display=swap');
+
+.welcometext{
+  font-family:  "Cormorant", sans-serif;
+  font-size: 34px;
+  color:black;
+  text-align: center;
+  position: relative;
+  /* border-bottom:  solid #ff7000; */
+}
+.welcometext:after{
+  content: "";
+  position: absolute;
+  width: 52%;
+ 
+ 
+  height: 3%;
+  bottom: 0;
+  left: 23%;
+  
+  background-color: #ff7000;
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.d{
+  width: 100%;
+  height: 10%;
+  object-fit: cover;
+}
+.content{
+  padding : 3rem;
+  align-items: center;
+}
+
+ 
+.abouttext{
+  color:#858585;
+  font-family: "Open Sans";
+  text-align: justify;
+  font-size: 16px;
+}
+
