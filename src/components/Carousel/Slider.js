@@ -36,6 +36,7 @@ export default function Slider() {
   //   }, 10000);
 
   return (
+    
     <div>
       {dataSlider.map((obj, index) => {
         return (
@@ -43,7 +44,7 @@ export default function Slider() {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            <img src={`forest1.jpg`} />
+            <img src={`post${index + 1}.jpg`} />
           </div>
         );
       })}

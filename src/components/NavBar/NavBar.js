@@ -42,14 +42,9 @@ const NavBar = (props) => {
         }
       >
         <div className="container">
-          <Link to='/'>
-            <img
-              src="logo.png"
-              style={{height:'55px'}}
-             
-              alt="Logo"
-            />
-            </Link>
+          <Link to="/">
+            <img src="lofgo.png" style={{ height: "55px" }} alt="Logo" />
+          </Link>
           <div
             className="navbar-toggler"
             type="button"
@@ -78,8 +73,8 @@ const NavBar = (props) => {
                   <span
                     className="nav-link"
                     style={{
-                      color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
-                      // color:'white'
+                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
+                      color: "white",
                     }}
                   >
                     Home
@@ -99,11 +94,53 @@ const NavBar = (props) => {
                   <span
                     className="nav-link"
                     style={{
-                      // color:'white'
-                      color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
+                      color: "white",
+                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     About
+                  </span>
+                </li>
+              </Link>
+            </ul>
+
+            <ul className="navbar-nav ml-auto">
+              <Link to="/services">
+                <li
+                  key="services"
+                  onClick={() => closeNav("services")}
+                  className={`nav-item hover-underline-animation new
+              ${value == "services" ? "hover-underline-animation1 new1" : ""}`}
+                >
+                  <span
+                    className="nav-link"
+                    style={{
+                      color: "white",
+                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
+                    }}
+                  >
+                    Services
+                  </span>
+                </li>
+              </Link>
+            </ul>
+
+            <ul className="navbar-nav ml-auto">
+              <Link to="/gallery">
+                <li
+                  key="gallery"
+                  onClick={() => closeNav("gallery")}
+                  className={`nav-item hover-underline-animation new
+              ${value == "gallery" ? "hover-underline-animation1 new1" : ""}`}
+                >
+                  <span
+                    className="nav-link"
+                    style={{
+                      color: "white",
+                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
+                    }}
+                  >
+                    Gallery
                   </span>
                 </li>
               </Link>
@@ -120,8 +157,8 @@ const NavBar = (props) => {
                   <span
                     className="nav-link"
                     style={{
-                      // color:'white'
-                      color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
+                      color: "white",
+                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     Contact

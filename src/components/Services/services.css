@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,900&family=Lobster&family=Oswald:wght@500&display=swap");
+.homeBox {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  transition: transform 0.5s ease;
+}
+.homeBox:hover {
+  transform: scale(1.04);
+}
+
+.card.bord{
+  border: 2px solid #807f7f;
+  background-color: #f5f4f4;
+  border-radius:10px;
+}
+
+.contain {
+  margin-top: 6rem;
+  padding-bottom:6rem;
+}
+  
+
+.underlinetext {
+  position: relative;
+}
+.underlinetext:after {
+  content: "";
+  position: absolute;
+  width: 52%;
+
+  height: 3%;
+  bottom: 0;
+  left: 23%;
+
+  /* background-color: #ff7000; */
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.viewbtn{
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  color: white;
+  height: 43px;
+  
+  line-height: 43px;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  width:150px;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+}

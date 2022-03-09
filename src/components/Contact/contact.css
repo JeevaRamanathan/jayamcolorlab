@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;1,900&family=Josefin+Sans:wght@400;600&family=Lobster&family=Merriweather:ital,wght@0,300;1,400&family=Oswald:wght@500&display=swap');
+.contactText {
+  font-family: "Raleway","Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 560;
+  color: black;
+ text-align: left;
+  position: relative;
+}
+.contactText:after {
+  content: "";
+  position: absolute;
+  width: 11%;
+  height: 5%;
+  bottom: 0;
+  left: 0%;
+  /* background-color: #ff7000; */
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+
+.contactText2 {
+  font-family: "Raleway","Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 560;
+  color: black;
+ text-align: left;
+  position: relative;
+}
+
+
+
+.btnColor{
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  color: white;
+  height: 43px;
+  
+  line-height: 43px;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+  width:200px;
+  font-size: medium;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+	
+
+}
+
+
+.btnColor:hover{
+  
+  color:whitesmoke;
+}
+
+.btnColor:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(207, 205, 205);
+  transform: translateY(4px);
+}
+
+.successMessage{
+  font-family: "Raleway","Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 560;
+  color: green;
+ text-align: left;
+}
+
+.contactText2:after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 5%;
+  bottom: 0;
+  left: 0;
+  
+  /* background-color: #ff7000; */
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.text1{
+    color: #313131;
+    font-weight: 500;
+    font-size: 17.5px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 10px;
+    margin-bottom:3rem;
+}

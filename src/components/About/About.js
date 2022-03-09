@@ -21,12 +21,12 @@ export default class About extends React.Component {
     return (
       <React.Fragment>
         <NavBar active={"about"} />
-        {/* <img  className="d" src='cam.jpg' /> */}
-        <div style={{ height: "5rem" }}> </div>
+        <img  className="d" src='cam.jpg' />
+        <div style={{ height: "0rem" }}> </div>
         <div className="container">
           <div className="row content">
             <div className="col-sm p-3">
-              <h2 className="welcometext">
+              <h2 className="underlinetext">
                 Welcome to Jayam Color Lab & Studio
               </h2>
               <p className="abouttext">
@@ -53,7 +53,11 @@ export default class About extends React.Component {
                 We undertake all kinds of events like wedding, engagement, baby
                 shoot, birthday, coorporate meetings and all other events.And we
                 are more specilized in chettinad wedding.
+                <br />
+                <br />
+                We also do album editing, designing photos, flex editing, collage work and so on.
               </p>
+
             </div>
             <div className="col-lg">
         
