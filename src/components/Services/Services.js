@@ -1,40 +1,13 @@
 import React from "react";
 import "./services.css";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import NavBar from "../NavBar/NavBar";
-import Slider from "../Carousel/Slider";
+
 import Lottie from "lottie-react";
 import camera from "../lotties/camera";
 import movieCamera from "../lotties/movie-camera";
 import editor from "../lotties/editor";
 import frame from "../lotties/frame";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  ZoomIn,
-} from "react-scroll-motion";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import {
-  CCarousel,
-  CCarouselItem,
-  CImage,
-  CCarouselCaption,
-} from "@coreui/react";
-
-const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-const FadeUp = batch(Fade(), Move(), Sticky());
 
 export default class Services extends React.Component {
   constructor(props) {
@@ -44,13 +17,14 @@ export default class Services extends React.Component {
     };
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+  }
 
   render() {
     return (
       <>
         <React.Fragment>
-          {this.props.home == "false" ? null : <NavBar active={"services"} />}
+          {/* {this.props.home == "false" ? null : <NavBar active={"services"} />} */}
 
           <div className="container contain ">
             {" "}
@@ -58,11 +32,14 @@ export default class Services extends React.Component {
             <div class="col-12">
               <div class="row">
                 <div class="col-lg-3 mb-3 d-flex ">
-                  <Link style={{textDecoration:"none"}} to="/photography">
                   <div class="card bord homeBox">
                     <Lottie
                       animationData={camera}
-                      loop={true}
+                      // loop={false}
+                      ref={animation => {
+                        this.animation = animation;
+                      }}
+                      // autoPlay={true}
                       className="card-img-top"
                       style={{
                         height: 230,
@@ -78,19 +55,18 @@ export default class Services extends React.Component {
                         Engagement, Puberty, Corporate Events, Family Events and
                         So on...
                       </p>
-
-                      <div
-                        className="btn  mt-auto viewbtn align-self-center"
-                        style={{
-                          
-                          color: "whitesmoke",
-                        }}
-                      >
-                        View Gallery
-                      </div>
+                      <Link className="mt-auto" to="/gallery/photography">
+                        <span
+                          className="btn  mt-auto viewbtn align-self-center"
+                          style={{
+                            color: "whitesmoke",
+                          }}
+                        >
+                          View Gallery
+                        </span>
+                      </Link>
                     </div>
                   </div>
-                  </Link>
                 </div>
                 <div class="col-lg-3 mb-3 d-flex ">
                   <div class=" card homeBox bord">
@@ -148,9 +124,9 @@ export default class Services extends React.Component {
                         look and feel more vibrant, fun and appealing with photo
                         editing. We edit those captures and present you the
                         final Album which will be with you forever. <br />
-                        <br /> Also we fix
-                        the damaged old photos and bring color to b/w
-                        photographs, flex editing, collage and etc., in our studio.
+                        <br /> Also we fix the damaged old photos and bring
+                        color to b/w photographs, flex editing, collage and
+                        etc., in our studio.
                       </p>
                       <div
                         className="btn viewbtn mt-auto align-self-center"
@@ -180,12 +156,14 @@ export default class Services extends React.Component {
 
                     <div class="card-body d-flex flex-column">
                       <p class="card-text mb-4">
-                        Framing some important memories in wall makes that moment memorable. 
-                        We provide many gift items that you can choose present for your loved ones.
-                        <br/><br/>
-
-                        We do services all around the India and just whatsapp or email us, we will deliver the
-                        frame and gift items at your doorstep.
+                        Framing some important memories in wall makes that
+                        moment memorable. We provide many gift items that you
+                        can choose present for your loved ones.
+                        <br />
+                        <br />
+                        We do services all around the India and just whatsapp or
+                        email us, we will deliver the frame and gift items at
+                        your doorstep.
                       </p>
                       <div
                         className="btn viewbtn mt-auto align-self-center"

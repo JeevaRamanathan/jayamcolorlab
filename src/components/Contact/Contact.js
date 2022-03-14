@@ -28,7 +28,7 @@ export default class Contact extends React.Component {
     });
     return (
       <React.Fragment>
-        <NavBar active={"contact"} />
+        {/* <NavBar active={"contact"} /> */}
         {/* <img className="d" src="cam2.jpg" /> */}
         <section>
           <div style={{ height: "5rem" }}></div>

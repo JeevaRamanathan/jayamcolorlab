@@ -15,7 +15,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar active={"home"} />
+        {/* <NavBar active={"home"} /> */}
         <Slider />
         <div style={{ height: "88vh" }}></div>
         <div>

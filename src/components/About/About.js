@@ -20,7 +20,7 @@ export default class About extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <NavBar active={"about"} />
+        {/* <NavBar active={"about"} /> */}
         <img  className="d" src='cam.jpg' />
         <div style={{ height: "0rem" }}> </div>
         <div className="container">

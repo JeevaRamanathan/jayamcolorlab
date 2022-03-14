@@ -2,8 +2,10 @@ import React, { Component, useEffect, useState } from "react";
 import "./Slider.css";
 import BtnSlider from "./BtnSlider";
 import dataSlider from "./dataSlider";
+
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
+  const [image, setImage] = useState("");
 
   const nextSlide = () => {
     if (slideIndex !== dataSlider.length) {
@@ -25,18 +27,7 @@ export default function Slider() {
     setSlideIndex(index);
   };
 
-  // },[])
-  // setInterval(() => {
-  //     let ind = slideIndex + 1;
-  //     if (slideIndex === dataSlider.length) {
-  //       setSlideIndex(1);
-  //     } else {
-  //       setSlideIndex(ind);
-  //     }
-  //   }, 10000);
-
   return (
-    
     <div>
       {dataSlider.map((obj, index) => {
         return (
@@ -44,7 +35,10 @@ export default function Slider() {
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            <img src={`post${index + 1}.jpg`} />
+            {/* {w(`post${index + 1}.jpg`)} */}
+            <img id="img" src={`forest.jpg`} />
+            {/* {image && image} */}
+            {/* <img src={image} /> */}
           </div>
         );
       })}
