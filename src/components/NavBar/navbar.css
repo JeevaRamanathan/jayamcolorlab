@@ -145,15 +145,17 @@ nav ul {
   background-color: #16181c;
   opacity: 0.9;
   border: 1px solid white;
-  /* color: white; */
+}
+#dropdownMenuButton[disabled] {
+  pointer-events: all;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   display: block;
-  margin-top: 1px;
-  background-color: #16181c;
+  margin-top: 1px !important;
+  background-color: #16181c !important;
   opacity: 0.9;
-  border: 1px solid white;
+  border: 1px solid white !important;
 }
 
 .dropdown-item:focus,
@@ -162,19 +164,14 @@ nav ul {
   background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
   background: linear-gradient(to right, #ee0979, #ff6a00);
   font-weight: 800;
-  
 }
 .dropdown-item {
   color: white !important;
-   margin-top: 1px;
-    /* background-color: #16181c; */
-    /* opacity: 0.9; */
-    /*  border: 1px solid white;
-    color: white; */
+  margin-top: 1px;
+
+  color: white;
 }
 select:active,
 select:hover {
   outline: none;
 }
-
-

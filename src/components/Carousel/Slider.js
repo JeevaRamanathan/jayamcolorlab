@@ -32,7 +32,7 @@ export default function Slider() {
       {dataSlider.map((obj, index) => {
         return (
           <div
-            key={obj.id}
+            key={index}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
             {/* {w(`post${index + 1}.jpg`)} */}
@@ -50,6 +50,7 @@ export default function Slider() {
       <div className="container-dots" style={{ cursor: "pointer" }}>
         {Array.from({ length: dataSlider.length }).map((item, index) => (
           <div
+          key={index}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? "dot active" : "dot"}
           ></div>

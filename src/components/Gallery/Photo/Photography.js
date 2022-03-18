@@ -1,6 +1,4 @@
 import React from "react";
-import NavBar from "../../NavBar/NavBar";
-
 export default class Photography extends React.Component {
   componentDidMount = async () => {
     // const s3 = new AWS.S3();
@@ -27,12 +25,6 @@ export default class Photography extends React.Component {
     // ).then((r) => r.json());
   };
   render() {
-    return (
-      <React.Fragment>
-        <NavBar active={"gallery"} />
-        Photography
-        {/* <img src="https://res.cloudinary.com/ddhcbvm5d/image/upload/v1646849357/photography/wedding/w1/JYM_0613_uiamfk.jpg" /> */}
-      </React.Fragment>
-    );
+    return <React.Fragment></React.Fragment>;
   }
 }

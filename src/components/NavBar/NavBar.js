@@ -35,7 +35,7 @@ const NavBar = (props) => {
       <nav
         id="navBar"
         className={
-          value == "home"
+          window.location.pathname == "/"
             ? colorChange || width < 992
               ? "navbar navbar-expand-lg fixed-top navbar-dark colorChange"
               : "navbar navbar-expand-lg fixed-top navbar-dark  transition"
@@ -67,14 +67,18 @@ const NavBar = (props) => {
                 <li
                   key="home"
                   onClick={() => closeNav("home")}
+                  // className={`nav-item hover-underline-animation new ${
+                  //   value == "home" ? "hover-underline-animation1 new1" : ""
+                  // }`}
                   className={`nav-item hover-underline-animation new ${
-                    value == "home" ? "hover-underline-animation1 new1" : ""
+                    window.location.pathname == "/"
+                      ? "hover-underline-animation1 new1"
+                      : ""
                   }`}
                 >
                   <span
                     className="nav-link"
                     style={{
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                       color: "white",
                     }}
                   >
@@ -89,14 +93,16 @@ const NavBar = (props) => {
                 <li
                   key="about"
                   onClick={() => closeNav("about")}
-                  className={`nav-item hover-underline-animation new
-              ${value == "about" ? "hover-underline-animation1 new1" : ""}`}
+                  className={`nav-item hover-underline-animation new ${
+                    window.location.pathname == "/about"
+                      ? "hover-underline-animation1 new1"
+                      : ""
+                  }`}
                 >
                   <span
                     className="nav-link"
                     style={{
                       color: "white",
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     About
@@ -111,13 +117,16 @@ const NavBar = (props) => {
                   key="services"
                   onClick={() => closeNav("services")}
                   className={`nav-item hover-underline-animation new
-              ${value == "services" ? "hover-underline-animation1 new1" : ""}`}
+              ${
+                window.location.pathname == "/services"
+                  ? "hover-underline-animation1 new1"
+                  : ""
+              }`}
                 >
                   <span
                     className="nav-link"
                     style={{
                       color: "white",
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     Services
@@ -126,68 +135,46 @@ const NavBar = (props) => {
               </Link>
             </ul>
 
-            {/* <ul className="navbar-nav ml-auto">
-              <Link to="/gallery">
-                <li
-                  key="gallery"
-                  onClick={() => closeNav("gallery")}
-                  className={`nav-item hover-underline-animation new
-              ${value == "gallery" ? "hover-underline-animation1 new1" : ""}`}
-                >
-                  <span
-                    className="nav-link"
-                    style={{
-                      color: "white",
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
-                    }}
-                  >
-                    Gallery
-                  </span>
-                </li>
-              </Link> */}
-            {/* </ul> */}
             <ul
-              class="navbar-nav ml-auto"
+              className="navbar-nav ml-auto dropdown"
               onMouseOver={() => setGalleryExpanded(false)}
             >
-              <div class={!galleryExpanded ? "dropdown" : "hide"}>
+              <div className={!galleryExpanded ? "dropdown" : "hide"}>
                 <li
                   id="dropdownMenuButton"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   key="gallery"
-                  onClick={() => closeNav("gallery")}
-                  className={`nav-item hover-underline-animation  new
-              ${value == "gallery" ? "hover-underline-animation1   new1" : ""}`}
+                  disabled={true}
+                  className={`nav-item hover-underline-animation new
+              ${
+                /^\/gallery\/[a-zA-Z]+$/.test(window.location.pathname)
+                  ? "hover-underline-animation1   new1"
+                  : ""
+              }`}
                 >
                   <span
                     className="nav-link"
                     style={{
                       color: "white",
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     Gallery
                   </span>
                 </li>
-                {/* <button class="btn btn-secondary"
-                    type="button" 
-                    id="dropdownMenuButton" 
-                    data-toggle="dropdown" 
-                    aria-haspopup="true" 
-                    aria-expanded="false">
-                Dropdown button
-            </button> */}
 
                 <div
-                  class={"dropdown-menu"}
+                  className={"dropdown-menu"}
                   aria-labelledby="dropdownMenuButton"
                 >
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      setGalleryExpanded(true);
+                      closeNav("gallery");
+                    }}
                     to="/gallery/wedding"
                   >
-                    <span class="dropdown-item">Wedding</span>
+                    <span className="dropdown-item">Wedding</span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
@@ -197,44 +184,71 @@ const NavBar = (props) => {
                     }}
                     to="/gallery/chettinadWedding"
                   >
-                    <span class="dropdown-item">Chettinad Wedding</span>
+                    <span className="dropdown-item">Chettinad Wedding</span>
                     <hr className="p-0 m-0" color="white" />
                   </Link>
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      {
+                        setGalleryExpanded(true);
+                        closeNav("gallery");
+                      }
+                    }}
                     to="/gallery/otherwedding"
                   >
-                    <span class="dropdown-item">60 / 70 / 80's Wedding</span>
+                    <span className="dropdown-item">
+                      60 / 70 / 80's Wedding
+                    </span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      {
+                        setGalleryExpanded(true);
+                        closeNav("gallery");
+                      }
+                    }}
                     to="/gallery/ppwe"
                   >
-                    <span class="dropdown-item">
+                    <span className="dropdown-item">
                       Pre/Post Wedding & Engagement{"   "}
                     </span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      {
+                        setGalleryExpanded(true);
+                        closeNav("gallery");
+                      }
+                    }}
                     to="/gallery/bday"
                   >
-                    <span class="dropdown-item">Birthday</span>
+                    <span className="dropdown-item">Birthday</span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      {
+                        setGalleryExpanded(true);
+                        closeNav("gallery");
+                      }
+                    }}
                     to="/gallery/corporateEvents"
                   >
-                    <span class="dropdown-item">Corporate Events</span>
+                    <span className="dropdown-item">Corporate Events</span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
-                    onClick={() => setGalleryExpanded(true)}
+                    onClick={() => {
+                      {
+                        setGalleryExpanded(true);
+                        closeNav("gallery");
+                      }
+                    }}
                     to="/gallery/albums"
                   >
-                    <span class="dropdown-item">Albums & Other Events</span>
+                    <span className="dropdown-item">Albums & Other Events</span>
                   </Link>
                 </div>
               </div>
@@ -246,13 +260,16 @@ const NavBar = (props) => {
                   key="contact"
                   onClick={() => closeNav("contact")}
                   className={`nav-item hover-underline-animation new
-              ${value == "contact" ? "hover-underline-animation1 new1" : ""}`}
+              ${
+                window.location.pathname == "/contact"
+                  ? "hover-underline-animation1 new1"
+                  : ""
+              }`}
                 >
                   <span
                     className="nav-link"
                     style={{
                       color: "white",
-                      // color: value=='home'? colorChange || width < 992 ? "#343635" : "white":'#343635'
                     }}
                   >
                     Contact

@@ -168,8 +168,8 @@ export default class Contact extends React.Component {
           </div>
         </section>
 
-        <div class="mapouter">
-          <div class="gmap_canvas">
+        <div className="mapouter">
+          <div className="gmap_canvas">
             <iframe
               width="100%"
               height="260"
@@ -177,12 +177,7 @@ export default class Contact extends React.Component {
               src="https://maps.google.com/maps?q=jayam%20color%20lab,%20trichy&t=&z=19&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
-              marginheight="0"
-              marginwidth="0"
             ></iframe>
-     
-
-           
           </div>
         </div>
       </React.Fragment>
