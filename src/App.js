@@ -3,7 +3,7 @@ import Home from "./components/Home/Home.js";
 import About from "./components/About/About.js";
 import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services.js";
-import Gallery from "./components/Gallery/Gallery";
+import Gallery from "./components/Gallery/Gallery.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 import "./App.css";
@@ -22,7 +22,7 @@ function App() {
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/services" element={<Services />} />
-          <Route exact path={"/gallery/:type"} element={<Gallery />} />
+          <Route exact path="/gallery/:type" element={<Gallery />} />
         </Routes>
       </BrowserRouter>
     </>

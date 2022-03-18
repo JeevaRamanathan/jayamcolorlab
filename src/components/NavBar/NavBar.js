@@ -148,8 +148,8 @@ const NavBar = (props) => {
                   disabled={true}
                   className={`nav-item hover-underline-animation new
               ${
-                /^\/gallery\/[a-zA-Z]+$/.test(window.location.pathname)
-                  ? "hover-underline-animation1   new1"
+                /^\/gallery\/[a-zA-Z]+/.test(window.location.pathname)
+                  ? "hover-underline-animation1 new1"
                   : ""
               }`}
                 >

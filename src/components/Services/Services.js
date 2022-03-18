@@ -33,8 +33,7 @@ export default class Services extends React.Component {
                   <div className="card bord homeBox">
                     <Lottie
                       animationData={camera}
-                      loop={false}
-                      autoPlay={true}
+                      loop={true}
                       className="card-img-top"
                       style={{
                         height: 230,
@@ -50,7 +49,7 @@ export default class Services extends React.Component {
                         Engagement, Puberty, Corporate Events, Family Events and
                         So on...
                       </p>
-                      <Link className="mt-auto" to="/gallery/photography">
+                      {/* <Link className="mt-auto" to="/gallery/photography">
                         <span
                           className="btn  mt-auto viewbtn align-self-center"
                           style={{
@@ -59,7 +58,7 @@ export default class Services extends React.Component {
                         >
                           View Gallery
                         </span>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -88,15 +87,15 @@ export default class Services extends React.Component {
                         with the candid shots and a music that makes you the
                         event memorable and brings you joy.
                       </p>
-                      <div
+                      {/* <div
                         className="btn viewbtn mt-auto align-self-center"
                         style={{
-                          // backgroundColor: "#ff7000",
+                         
                           color: "whitesmoke",
                         }}
                       >
                         View Gallery
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -123,7 +122,7 @@ export default class Services extends React.Component {
                         color to b/w photographs, flex editing, collage and
                         etc., in our studio.
                       </p>
-                      <div
+                      {/* <div
                         className="btn viewbtn mt-auto align-self-center"
                         style={{
                           // backgroundColor: "#ff7000",
@@ -131,7 +130,7 @@ export default class Services extends React.Component {
                         }}
                       >
                         View Gallery
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -160,7 +159,7 @@ export default class Services extends React.Component {
                         email us, we will deliver the frame and gift items at
                         your doorstep.
                       </p>
-                      <div
+                      {/* <div
                         className="btn viewbtn mt-auto align-self-center"
                         style={{
                           // backgroundColor: "#ff7000",
@@ -168,7 +167,7 @@ export default class Services extends React.Component {
                         }}
                       >
                         View Gallery
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>

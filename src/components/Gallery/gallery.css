@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap") */
+.headingText {
+  /* font-family: "Raleway", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica,
+    Arial, sans-serif; */
+  font-family: "Satisfy", cursive;
+  font-size: 25px;
+  font-weight: 560;
+  color: black;
+  text-align: left;
+  position: relative;
+}
+.headingText:after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  bottom: 0;
+  left: 0%;
+
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.bodyText {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.galleryImg {
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* .img-hover-zoom {
+  transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+}
+
+.img-hover-zoom:hover {
+  filter: brightness(100%);
+  transform: scale(3);
+} */
+
+.img-hover-zoom {
+  /* height: 300px; [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform 1s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+
+.img-hover-zoom--slowmo img {
+  transform-origin: 50% 55%;
+  transition: transform 5s, filter 1s ease-in-out;
+  /* filter: brightness(150%); */
+}
+
+/* The Transformation */
+.img-hover-zoom--slowmo:hover img {
+  filter: brightness(105%);
+  transform: scale(1.4);
+}
+
+.imgText {
+  color: white;
+
+  font-size: 18px;
+  font-family: "Manrope";
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.locationText {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Manrope";
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+
+.imgText::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 7%;
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  left: 0%;
+  background: #ee0979;
+  background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.cont:hover .middle {
+  opacity: 1;
+}
+
+.cont:hover img {
+  filter: brightness(50%);
+}
