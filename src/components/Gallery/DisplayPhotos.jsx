@@ -6,7 +6,7 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
 import lgHash from "lightgallery/plugins/hash";
 import lgAutoplay from "lightgallery/plugins/autoplay";
-import ReactImageProcess from "react-image-process";
+
 import "lightgallery/css/lightgallery-bundle.css";
 import "lightgallery/css/lightgallery.css";
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -49,22 +49,13 @@ export default function DisplayPhotos(props) {
                     >
                       
                       <div className="hoverGalleryImg">
-                      {/* <ReactImageProcess
-      mode="waterMark"
-      waterMarkType="text"
-      waterMark={"WATER"}
-      fontBold={false}
-      fontSize={20}
-      fontColor="#396"
-      coordinate={[10, 20]}
-    
-    > */}
+                        
                         <img
                           className="img-responsive"
                           src={`/Gallery/Wedding/w1/img(${index + 1}).jpg`}
                           // src="https://images.unsplash.com/photo-1581894158358-5ecd2c518883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
                         />
-                         {/* </ReactImageProcess> */}
+                         
                       </div>
                     </a>
                   );

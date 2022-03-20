@@ -14,7 +14,7 @@ export const ChettinadWedding = {
       location: "Kulipirai",
       url: "/Gallery/Wedding/w1",
       count: 19,
-      thumbnail: "/Gallery/Wedding/w1/img(2).jpg",
+      thumbnail: "/Gallery/Wedding/w1/img(12).jpg",
     },
   ],
 };
