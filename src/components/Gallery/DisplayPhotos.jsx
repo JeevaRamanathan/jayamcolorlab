@@ -18,6 +18,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function DisplayPhotos(props) {
   const { state } = useLocation();
+  console.log(state.data);
   return (
     <div style={{ backgroundColor: "#1a1a1a" }}>
       <div style={{ marginTop: "0rem" }}>
@@ -42,17 +43,18 @@ export default function DisplayPhotos(props) {
                 {new Array(state.data.count).fill(0).map((data, index) => {
                   return (
                     <a
-                      className=" -item"
-                      src={`/Gallery/Wedding/w1/img(${index + 1}).jpg`}
+                      key={index}
+                      src={`${state.data.url}/img(${index + 1}).jpg`}
                       // data-src="https://images.unsplash.com/photo-1581894158358-5ecd2c518883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1406&q=80"
-                      data-sub-html="<p>&nbsp;</p>"
+                      data-sub-html={`<p style='font-family:Satisfy;font-size:18px;'>${state.data.title}</p>`}
                     >
                       
                       <div className="hoverGalleryImg">
                         
                         <img
                           className="img-responsive"
-                          src={`/Gallery/Wedding/w1/img(${index + 1}).jpg`}
+                          alt={ state.data.title+" Image"}
+                          src={`${state.data.url}/img(${index + 1}).jpg`}
                           // src="https://images.unsplash.com/photo-1581894158358-5ecd2c518883?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=240&q=80"
                         />
                          

@@ -33,8 +33,8 @@ export default class About extends React.Component {
                 {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
                 Jayam Color Lab & Studio was established in the year of 2006 in Trichy and owned by
                 Mr.Muthu Ram who is experienced in the photography field for
-                more than 16 years. We are specialized in events photography and
-                studio phography, designing.
+                more than 16 years. We are specialized in wedding photography,
+                studio photography, designing.
                 <br />
                 <br />
                 {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
@@ -52,7 +52,7 @@ export default class About extends React.Component {
                 We respect our client thoughts and we do give our best services.
                 We undertake all kinds of events like wedding, engagement, baby
                 shoot, birthday, coorporate meetings and all other events.And we
-                are more specilized in chettinad wedding.
+                are more specilized in chettinad wedding photography.
                 <br />
                 <br />
                 We also do album editing, designing photos, flex editing, collage work and so on.

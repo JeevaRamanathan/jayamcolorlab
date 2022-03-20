@@ -57,7 +57,7 @@
 
 /* [2] Transition property for smooth transformation of images */
 .img-hover-zoom img {
-  transition: transform 1s ease;
+  /* transition: transform 1s ease; */
 }
 
 /* [3] Finally, transforming the image when container gets hovered */
@@ -74,7 +74,7 @@
 /* The Transformation */
 .img-hover-zoom--slowmo:hover img {
   filter: brightness(105%);
-  transform: scale(1.4);
+  /* transform: scale(1.4); */
 }
 
 .imgText {
@@ -134,12 +134,23 @@
   text-align: center;
 }
 
-.waterMark {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
+@media (min-width: 992px) {
+  #hide {
+    display: none;
+  }
 }
 
+@media (max-width: 992px) {
+  .middle {
+    display: none;
+  }
+  .img-hover-zoom:hover img {
+    transform: scale(1);
+  }
+  .img-hover-zoom--slowmo:hover img {
+    filter: brightness(100%);
+  }
+}
 .cont:hover .middle {
   opacity: 1;
 }

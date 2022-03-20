@@ -6,15 +6,23 @@ export const wedding = {
 
 export const ChettinadWedding = {
   title: "Chettinad Wedding",
-  body: "Chettinad weddings have authentic rituals and traditions, celebrated majestically in their home town. The marriage ceremony of the Chettinad people is celebrated in a majestic way. The minimum period of the celebration is three days, which consists of various traditional rituals. We are more experienced and specialized in covering chettinad wedding mainly. We have taken more than 200 chettinad functions. We freeze all the moments in the Authentic Chettinad Style including candid photography and videography.",
+  body: "Chettinad weddings have authentic rituals and traditions, celebrated majestically in their home town. The marriage ceremony of the Chettinad people is celebrated in a majestic way. The minimum period of the celebration is three days, which consists of various traditional rituals. We are more experienced and specialized in covering chettinad wedding mainly. We have taken more than 100 chettinad functions. We freeze all the moments in the Authentic Chettinad Style including candid photography and videography.",
   images: [
     {
       id: 1,
       title: "Thiyagarajan & Manibala",
-      location: "Kulipirai",
+      location: "Nerkuppai",
       url: "/Gallery/Wedding/w1",
       count: 19,
-      thumbnail: "/Gallery/Wedding/w1/img(12).jpg",
+      thumbnail: "/Gallery/Wedding/w1/img(6).jpg",
+    },
+    {
+      id: 2,
+      title: "Senthil & Valli",
+      location: "Kulipirai",
+      url: "/Gallery/Wedding/w2",
+      count: 12,
+      thumbnail: "/Gallery/Wedding/w2/img(4).jpg",
     },
   ],
 };
@@ -23,12 +31,7 @@ export const OtherWedding = {
   title: "60th, 70th and 80th Anniversary",
   body: "Wedding anniversaries are always special. They represent the strength and longevity of the love of two people. But a 60th(Diamond), 70th(Platinum) and 80th(Oak) wedding anniversaries are extra special! which should be framed for the rememberance of current and future generation too. We capture those unique moments in a beautiful way that will cherish you to live long.",
   images: [
-    {
-      id: 1,
-      title: "Ram & Janu",
-      location: "Trichy",
-      url: "/Gallery/Wedding",
-    },
+    
   ],
 };
 

@@ -3,10 +3,7 @@ import React from "react";
 import { ImLocation2 } from "react-icons/im";
 import "./contact.css";
 import TextField from "@mui/material/TextField";
-import NavBar from "../NavBar/NavBar";
 import { MdEmail } from "react-icons/md";
-import Lottie from "lottie-react";
-import mail from "../lotties/mail";
 import { BsFillTelephonePlusFill } from "react-icons/bs";
 import { Formik, Form } from "formik";
 import * as yup from "yup";
@@ -78,7 +75,6 @@ export default class Contact extends React.Component {
                       enableReinitialize
                       validationSchema={formSchema}
                       onSubmit={(values, { resetForm }) => {
-                        console.log(values);
                         resetForm({ values: "" });
                         this.setState({
                           successMessage:
@@ -175,7 +171,6 @@ export default class Contact extends React.Component {
               height="260"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=jayam%20color%20lab,%20trichy&t=&z=19&ie=UTF8&iwloc=&output=embed"
-              frameborder="0"
               scrolling="no"
             ></iframe>
           </div>

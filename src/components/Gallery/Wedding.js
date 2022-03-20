@@ -3,10 +3,10 @@ import "./gallery.css";
 import Lottie from "lottie-react";
 import Nodata from "../lotties/nodata.json";
 import { useNavigate } from "react-router-dom";
-import { wedding } from "./GalleryData";
+import {  wedding } from "./GalleryData";
 export default function Wedding(props) {
   const navigate = useNavigate();
-  console.log(wedding.images.length + "=");
+
   return (
     <React.Fragment>
       <div style={{ marginTop: "4rem" }}>
@@ -49,6 +49,13 @@ export default function Wedding(props) {
                         <br />
                         <div class="locationText">{data.location}</div>
                       </div>
+                      <div
+                        class="locationText"
+                        id="hide"
+                        style={{ color: "black", textAlign: "center" }}
+                      >
+                        {data.title}
+                      </div>
                     </div>
                   </div>
                 );
@@ -58,7 +65,7 @@ export default function Wedding(props) {
                 <Lottie
                   style={{
                     height: 290,
-                    width:"300"
+                    width: "300",
                   }}
                   animationData={Nodata}
                   loop={true}
