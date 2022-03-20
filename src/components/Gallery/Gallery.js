@@ -8,20 +8,20 @@ import Birthday from "./Birthday";
 import CoorporateEvents from "./CoorporateEvents";
 export default function Gallery(params) {
   const { type } = useParams();
-  console.log(type);
+
   switch (type) {
     case "wedding":
-      return <Wedding />;
-    case "chettiandWedding":
-      return <ChettinadWedding />;
+      return <Wedding type={type} />;
+    case "chettinadWedding":
+      return <ChettinadWedding type={type} />;
     case "otherwedding":
-      return <OtherWedding />;
+      return <OtherWedding type={type} />;
     case "ppwe":
-      return <PPEngagement />;
+      return <PPEngagement type={type} />;
     case "bday":
-      return <Birthday />;
+      return <Birthday type={type} />;
     case "corporateEvents":
-      return <CoorporateEvents />;
+      return <CoorporateEvents type={type} />;
     default:
       return <PageNotFound />;
   }

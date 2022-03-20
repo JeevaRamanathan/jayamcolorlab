@@ -1,6 +1,6 @@
 import React from "react";
 import "./gallery.css";
-import { wedding } from "./GalleryData";
+import { CorporateEvents as CE } from "./GalleryData";
 export default class CoorporateEvents extends React.Component {
   componentDidMount() {}
   render() {
@@ -8,10 +8,10 @@ export default class CoorporateEvents extends React.Component {
       <React.Fragment>
         <div style={{ marginTop: "4rem" }}>
           <div className="container pt-4">
-            <span className="headingText">{wedding["title"]} </span>
-            <div className="bodyText mt-3 mb-4">{wedding.body} </div>
+            <span className="headingText">{CE["title"]} </span>
+            <div className="bodyText mt-3 mb-4">{CE.body} </div>
             <div className="row">
-              {wedding.images.map((data, index) => {
+              {CE.images.map((data, index) => {
                 return (
                   <div key={index} className="col-lg-4 col-md-6 mb-3 d-flex ">
                     <div

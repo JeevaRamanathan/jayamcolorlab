@@ -1,6 +1,6 @@
 import React from "react";
 import "./gallery.css";
-import { wedding } from "./GalleryData";
+import { OtherWedding as OW } from "./GalleryData";
 export default class OtherWedding extends React.Component {
   componentDidMount() {}
   render() {
@@ -8,10 +8,10 @@ export default class OtherWedding extends React.Component {
       <React.Fragment>
         <div style={{ marginTop: "4rem" }}>
           <div className="container pt-4">
-            <span className="headingText">{wedding["title"]} </span>
-            <div className="bodyText mt-3 mb-4">{wedding.body} </div>
+            <span className="headingText">{OW["title"]} </span>
+            <div className="bodyText mt-3 mb-4">{OW.body} </div>
             <div className="row">
-              {wedding.images.map((data, index) => {
+              {OW.images.map((data, index) => {
                 return (
                   <div key={index} className="col-lg-4 col-md-6 mb-3 d-flex ">
                     <div

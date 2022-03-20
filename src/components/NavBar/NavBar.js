@@ -35,7 +35,7 @@ const NavBar = (props) => {
       <nav
         id="navBar"
         className={
-          window.location.pathname == "/"
+          window.location.pathname === "/"
             ? colorChange || width < 992
               ? "navbar navbar-expand-lg fixed-top navbar-dark colorChange"
               : "navbar navbar-expand-lg fixed-top navbar-dark  transition"
@@ -71,7 +71,7 @@ const NavBar = (props) => {
                   //   value == "home" ? "hover-underline-animation1 new1" : ""
                   // }`}
                   className={`nav-item hover-underline-animation new ${
-                    window.location.pathname == "/"
+                    window.location.pathname === "/"
                       ? "hover-underline-animation1 new1"
                       : ""
                   }`}
@@ -94,7 +94,7 @@ const NavBar = (props) => {
                   key="about"
                   onClick={() => closeNav("about")}
                   className={`nav-item hover-underline-animation new ${
-                    window.location.pathname == "/about"
+                    window.location.pathname === "/about"
                       ? "hover-underline-animation1 new1"
                       : ""
                   }`}
@@ -118,7 +118,7 @@ const NavBar = (props) => {
                   onClick={() => closeNav("services")}
                   className={`nav-item hover-underline-animation new
               ${
-                window.location.pathname == "/services"
+                window.location.pathname === "/services"
                   ? "hover-underline-animation1 new1"
                   : ""
               }`}
@@ -261,7 +261,7 @@ const NavBar = (props) => {
                   onClick={() => closeNav("contact")}
                   className={`nav-item hover-underline-animation new
               ${
-                window.location.pathname == "/contact"
+                window.location.pathname === "/contact"
                   ? "hover-underline-animation1 new1"
                   : ""
               }`}
