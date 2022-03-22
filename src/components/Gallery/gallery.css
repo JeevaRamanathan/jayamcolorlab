@@ -8,7 +8,7 @@
   font-family: "Satisfy", cursive;
   font-size: 25px;
   font-weight: 560;
-  color: black;
+  color: #2B394A;
   text-align: left;
   position: relative;
 }
@@ -31,7 +31,7 @@
 .bodyText {
   /* font-family: "Josefin Sans", sans-serif; */
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 15px;
   text-align: justify;
 }
 
@@ -80,7 +80,7 @@
 .imgText {
   color: white;
 
-  font-size: 18px;
+  font-size: 21px;
   font-family: "Manrope";
   display: inline-block;
   overflow: hidden;
@@ -91,12 +91,22 @@
 .locationText {
   color: white;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 21px;
   font-family: "Manrope";
   display: inline-block;
   overflow: hidden;
   position: relative;
   white-space: nowrap;
+}
+
+.hiddenText {
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Manrope";
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
 }
 
 .imgText::after {

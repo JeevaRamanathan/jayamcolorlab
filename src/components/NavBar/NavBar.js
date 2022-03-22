@@ -236,7 +236,7 @@ const NavBar = (props) => {
                     }}
                     to="/gallery/corporateEvents"
                   >
-                    <span className="dropdown-item">Corporate Events</span>
+                    <span className="dropdown-item">Other Events</span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link
@@ -248,7 +248,7 @@ const NavBar = (props) => {
                     }}
                     to="/gallery/albums"
                   >
-                    <span className="dropdown-item">Albums & Other Events</span>
+                    <span className="dropdown-item">Albums</span>
                   </Link>
                 </div>
               </div>

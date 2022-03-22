@@ -8,7 +8,6 @@ import { ChettinadWedding as CW } from "./GalleryData";
 export default function ChettinadWedding(props) {
   const navigate = useNavigate();
 
- 
   return (
     <React.Fragment>
       <div style={{ marginTop: "4rem" }}>
@@ -35,14 +34,14 @@ export default function ChettinadWedding(props) {
                       style={{ border: "none" }}
                     >
                       <img
-                       
                         className="galleryImg"
                         height={500}
                         width={700}
-                        style={{ objectFit:"cover"}}
+                        style={{ objectFit: "cover" }}
                         src={
-                          window.location.origin +
-                          "/" +
+                          // window.location.origin +
+                          process.env.PUBLIC_URL +
+                          
                           CW.images[index].thumbnail
                         }
                         alt="Image"
@@ -52,7 +51,14 @@ export default function ChettinadWedding(props) {
                         <br />
                         <div class="locationText">{data.location}</div>
                       </div>
-                      <div class="locationText" id="hide" style={{color:"black",textAlign:'center'}}>{data.title}</div>
+                      <div
+                        class="hiddenText"
+                        id="hide"
+                        style={{ color: "black", textAlign: "center" }}
+                      >
+                        {data.title}
+                        {data.title} / {data.location}
+                      </div>
                     </div>
                   </div>
                 );

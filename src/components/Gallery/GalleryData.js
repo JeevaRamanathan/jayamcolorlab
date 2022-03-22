@@ -30,46 +30,23 @@ export const ChettinadWedding = {
 export const OtherWedding = {
   title: "60th, 70th and 80th Anniversary",
   body: "Wedding anniversaries are always special. They represent the strength and longevity of the love of two people. But a 60th(Diamond), 70th(Platinum) and 80th(Oak) wedding anniversaries are extra special! which should be framed for the rememberance of current and future generation too. We capture those unique moments in a beautiful way that will cherish you to live long.",
-  images: [
-    
-  ],
+  images: [],
 };
 
 export const PPWE = {
   title: "Pre/Post Wedding & Engagement",
   body: "Engagement photography is a session where we capture the raw emotion from your ring exchange ceremony. Engagement is one of the most significant events in your life. And it deserves to be captured with an amazing photoshoot. The wedding day comes with some predefined rules. The rules of particular dress code and rituals can restrict you. But with engagement and Pre/Post Wedding photography, you can play with your outfit and setup. From various quirky themes to different setups, it gives you the freedom to exercise your creativity. We do with the latest trends in photography which will making your pictures amusing.",
-  images: [
-    {
-      id: 1,
-      title: "Ram & Janu",
-      location: "Trichy",
-      url: "/Gallery/Wedding",
-    },
-  ],
+  images: [],
 };
 
 export const Birthday = {
   title: "Birthday",
   body: "When you are young, one of the most special days of the year is your birthday. Whether it’s a home party or a special day out, being creative and flexible is the best way to catch memorable birthday images.Children can be temperamental at the best of times, so always be ready to capture the smiles when they occur which will defenitely make them joyful when they see those in later days. So don't wait for booking for a professional bithday photoshoot. Book Now!",
-  images: [
-    {
-      id: 1,
-      title: "Ram & Janu",
-      location: "Trichy",
-      url: "/Gallery/Wedding",
-    },
-  ],
+  images: [],
 };
 
 export const CorporateEvents = {
   title: "Corporate Events and Other Functions",
-  body: "Corporate photography is the unsung hero of the multimedia world. Corporate Photography is a broad term that can encompass any photography done for the purpose of use by a company. Like Conferences and smaller events, marketing and more. We also do capture these events with setup of proper lights, perfect shots in a corporate approach.",
-  images: [
-    {
-      id: 1,
-      title: "Ram & Janu",
-      location: "Trichy",
-      url: "/Gallery/Wedding",
-    },
-  ],
+  body: "Corporate photography is the unsung hero of the multimedia world. Corporate Photography is a broad term that can encompass any photography done for the purpose of use by a company. Like Conferences and smaller events, marketing and more. We also do capture these events with setup of proper lights, perfect shots in a corporate approach. And all other events such as puberty, gathering for a function at home all will be captured with appropriate equipments.",
+  images: [],
 };

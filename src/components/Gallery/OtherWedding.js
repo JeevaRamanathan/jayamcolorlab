@@ -38,9 +38,9 @@ export default function OtherWedding(props) {
                         width={700}
                         style={{ objectFit: "cover" }}
                         src={
-                          window.location.origin +
-                          "/" +
-                          OW.images[index].thumbnail
+                          // window.location.origin +
+                          // "/" +
+                          process.env.PUBLIC_URL + OW.images[index].thumbnail
                         }
                         alt="Image"
                       />

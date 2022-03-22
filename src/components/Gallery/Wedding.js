@@ -38,8 +38,9 @@ export default function Wedding(props) {
                         width={700}
                         style={{ objectFit: "cover" }}
                         src={
-                          window.location.origin +
-                          "/" +
+                          // window.location.origin +
+                          // "/" +
+                          process.env.PUBLIC_URL +
                           wedding.images[index].thumbnail
                         }
                         alt="Image"

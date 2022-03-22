@@ -10,8 +10,10 @@ export default function Slider() {
   const nextSlide = () => {
     if (slideIndex !== dataSlider.length) {
       setSlideIndex(slideIndex + 1);
+      console.log("in");
     } else if (slideIndex === dataSlider.length) {
       setSlideIndex(1);
+      console.log("in3");
     }
   };
 
@@ -26,6 +28,15 @@ export default function Slider() {
   const moveDot = (index) => {
     setSlideIndex(index);
   };
+
+  useEffect(() => {
+    let interval = setInterval(() => {
+      console.log("Logs every minute");
+      nextSlide();
+    }, 4000);
+
+    return () => clearInterval(interval); // This represents the unmount function, in which you need to clear your interval to prevent memory leaks.
+  }, [slideIndex]);
 
   return (
     <div>
@@ -43,14 +54,14 @@ export default function Slider() {
         );
       })}
       {/* post${index + 1} */}
-      <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      <BtnSlider moveSlide={prevSlide} direction={"prev"} />
+      {/* <BtnSlider moveSlide={nextSlide} direction={"next"} />
+      <BtnSlider moveSlide={prevSlide} direction={"prev"} /> */}
       <p className="slider-text"></p>
 
       <div className="container-dots" style={{ cursor: "pointer" }}>
         {Array.from({ length: dataSlider.length }).map((item, index) => (
           <div
-          key={index}
+            key={index}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? "dot active" : "dot"}
           ></div>

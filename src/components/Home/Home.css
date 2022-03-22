@@ -1,0 +1,74 @@
+.homeImg {
+  background: url("./th.jpg") center fixed;
+}
+.countImg {
+  background: url("./count.jpg") center fixed;
+}
+
+.iconColor {
+  color: "red";
+  font-size: 20px;
+}
+.homeText {
+  color: white;
+  cursor: pointer;
+  font-size: 21px;
+  font-family: "Manrope";
+  /* display: inline-block; */
+  text-align: center;
+}
+
+.homeText2 {
+  color: #2b394a;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Manrope";
+  /* display: inline-block; */
+  /* font-size: large; */
+}
+.homeHov {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.homeHov:hover {
+  transform: scale(1.1);
+}
+
+.homeText3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.abcontaniner {
+  position: relative;
+  flex-grow: 1;
+  margin: auto;
+  max-width: 1800px;
+  max-height: 100px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 3vmin;
+  justify-items: right;
+  align-items: right;
+}
+
+.ab img {
+  z-index: 1;
+  grid-column: span 2;
+  max-width: 100%;
+  margin-bottom: -52%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: all 0.25s;
+}
+.ab img:nth-child(6n + 3) {
+  grid-column: 2 / span 2;
+}
+.ab img:hover {
+  z-index: 2;
+  transition: transform 0.25s ease-out;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}

@@ -3,7 +3,8 @@
   font-family: "Raleway","Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 560;
-  color: black;
+  /* color: black; */
+  color: #2B394A;
  text-align: left;
   position: relative;
 }
@@ -28,7 +29,8 @@
   font-family: "Raleway","Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-weight: 560;
-  color: black;
+  /* color: black; */
+  color: #2B394A;
  text-align: left;
   position: relative;
 }
