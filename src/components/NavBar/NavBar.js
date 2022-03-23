@@ -19,6 +19,7 @@ const NavBar = (props) => {
   };
 
   useEffect(() => {
+  
     window.addEventListener("scroll", changeNavbarColor);
   });
 
@@ -44,7 +45,7 @@ const NavBar = (props) => {
       >
         <div className="container">
           <Link to="/">
-            <img src="lofgo.png" style={{ height: "55px" }} alt="Logo" />
+            <img src="jcllogo.png" style={{ height: "40px" }} alt="Logo" />
           </Link>
           <div
             className="navbar-toggler"
@@ -111,7 +112,7 @@ const NavBar = (props) => {
               </Link>
             </ul>
 
-            <ul className="navbar-nav ml-auto">
+            {/* <ul className="navbar-nav ml-auto">
               <Link to="/services">
                 <li
                   key="services"
@@ -133,7 +134,7 @@ const NavBar = (props) => {
                   </span>
                 </li>
               </Link>
-            </ul>
+            </ul> */}
 
             <ul
               className="navbar-nav ml-auto dropdown"
@@ -253,6 +254,31 @@ const NavBar = (props) => {
                 </div>
               </div>
             </ul>
+
+            <ul className="navbar-nav ml-auto">
+              <Link to="/videography">
+                <li
+                  key="videography"
+                  onClick={() => closeNav("videography")}
+                  className={`nav-item hover-underline-animation new ${
+                    window.location.pathname === "/videography"
+                      ? "hover-underline-animation1 new1"
+                      : ""
+                  }`}
+                >
+                  <span
+                    className="nav-link"
+                    style={{
+                      color: "white",
+                    }}
+                  >
+                    Wedding Flims
+                  </span>
+                </li>
+              </Link>
+            </ul>
+
+            
 
             <ul className="navbar-nav ml-auto">
               <Link to="/contact">

@@ -10,10 +10,8 @@ export default function Slider() {
   const nextSlide = () => {
     if (slideIndex !== dataSlider.length) {
       setSlideIndex(slideIndex + 1);
-      console.log("in");
     } else if (slideIndex === dataSlider.length) {
       setSlideIndex(1);
-      console.log("in3");
     }
   };
 
@@ -47,9 +45,8 @@ export default function Slider() {
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
             {/* {w(`post${index + 1}.jpg`)} */}
-            <img id="img" src={`forest.jpg`} />
-            {/* {image && image} */}
-            {/* <img src={image} /> */}
+            <img id="img" src={`post${index + 1}.jpg`} />
+            {/* <p className="homeImgText">Wedding Photgraphy</p> */}
           </div>
         );
       })}

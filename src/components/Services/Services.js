@@ -26,9 +26,7 @@ export default class Services extends React.Component {
 
           <div className="container contain ">
             {" "}
-            <h4 className="welcometext">
-              What We Do
-              </h4>
+            <h4 className="welcometext">What We Do</h4>
             <div className="col-12">
               <div className="row">
                 <div className="col-lg-3 mb-3 d-flex ">
@@ -41,7 +39,7 @@ export default class Services extends React.Component {
                         height: 230,
                       }}
                     />
-                    <h6 className="underlinetext homeBoxHeading">PHOTOGRAPHY</h6>
+                    <h6 className="underlinetext">PHOTOGRAPHY</h6>
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4 ">
                         We have the expertise in all kinds of photography
@@ -74,7 +72,7 @@ export default class Services extends React.Component {
                         height: 230,
                       }}
                     />
-                    <h6 className="underlinetext homeBoxHeading">
+                    <h6 className="underlinetext">
                       VIDEOGRAPHY & WEDDING FLIMS
                     </h6>
                     <div className="card-body d-flex flex-column">
@@ -112,7 +110,7 @@ export default class Services extends React.Component {
                       }}
                     />
 
-                    <h6 className="underlinetext homeBoxHeading"> STUDIO / DESIGNING </h6>
+                    <h6 className="underlinetext"> STUDIO / DESIGNING </h6>
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4">
                         There is no limit to the effects that can be brought
@@ -138,7 +136,7 @@ export default class Services extends React.Component {
                 </div>
 
                 <div className="col-lg-3 mb-3 d-flex ">
-                  <div className="card bord homeBox ">
+                  <div className="card bord homeBox">
                     <Lottie
                       animationData={frame}
                       loop={true}
@@ -148,7 +146,7 @@ export default class Services extends React.Component {
                       }}
                     />
 
-                    <h6 className="underlinetext homeBoxHeading"> FRAMES & GIFTS </h6>
+                    <h6 className="underlinetext"> FRAMES & GIFTS </h6>
 
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4">

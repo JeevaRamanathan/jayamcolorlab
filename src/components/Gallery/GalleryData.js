@@ -50,3 +50,8 @@ export const CorporateEvents = {
   body: "Corporate photography is the unsung hero of the multimedia world. Corporate Photography is a broad term that can encompass any photography done for the purpose of use by a company. Like Conferences and smaller events, marketing and more. We also do capture these events with setup of proper lights, perfect shots in a corporate approach. And all other events such as puberty, gathering for a function at home all will be captured with appropriate equipments.",
   images: [],
 };
+export const Album = {
+  title: "Album",
+  body: "",
+  images: [],
+};

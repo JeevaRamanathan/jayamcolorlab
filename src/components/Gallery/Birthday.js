@@ -6,7 +6,7 @@ import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
 
-export default function PPEngagement(props) {
+export default function Birthday(props) {
   const navigate = useNavigate();
 
   return (
@@ -42,8 +42,7 @@ export default function PPEngagement(props) {
                         src={
                           // window.location.origin +
                           // "/" +
-                          process.env.PUBLIC_URL +
-                          BD.images[index].thumbnail
+                          process.env.PUBLIC_URL + BD.images[index].thumbnail
                         }
                         alt="Image"
                       />

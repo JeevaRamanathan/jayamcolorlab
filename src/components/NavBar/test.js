@@ -24,7 +24,7 @@ function Header() {
   }, []);
 
   const handleNavCollapse = (isButton) => {
-    console.log(isButton,isNavCollapsed);
+ 
     if (!isButton) setIsNavCollapsed(!isNavCollapsed);
     else if (isNavCollapsed && isButton){
       setIsNavCollapsed(!isNavCollapsed);

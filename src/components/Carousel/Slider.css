@@ -13,6 +13,18 @@
 .active-anim {
   opacity: 1;
 }
+.homeImgText {
+  position: absolute;
+  top: 50%;
+
+  bottom: 0;
+  color: white;
+  opacity: 80%;
+  left:50%;
+  right: 50%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 44px;
+}
 
 .btn-slide {
   width: 50px;

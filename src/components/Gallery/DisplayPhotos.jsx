@@ -18,7 +18,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function DisplayPhotos(props) {
   const { state } = useLocation();
-  console.log(state.data);
+
   return (
     <div style={{ backgroundColor: "#1a1a1a" }}>
       <div style={{ marginTop: "0rem" }}>

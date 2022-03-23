@@ -6,10 +6,12 @@ import Services from "./components/Services/Services.js";
 import Gallery from "./components/Gallery/Gallery.js";
 import NavBar from "./components/NavBar/NavBar.js";
 import DisplayPhotos from "./components/Gallery/DisplayPhotos.jsx";
+import Footer from "./components/Footer/Footer.js";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 import "./App.css";
 import { useState } from "react";
+import Videography from "./components/Videography/Videography.js";
 
 function App() {
   const [active, setActive] = useState("home");
@@ -21,6 +23,14 @@ function App() {
   return (
     <>
       <BrowserRouter>
+        <a
+          href="https://api.whatsapp.com/send?phone=919486491801&text=Hi"
+          className="float"
+          style={{textDecoration:"none",color:"white"}}
+          target="_blank"
+        >
+          <i class="fa fa-whatsapp my-float"></i>
+        </a>
         <NavBar active={active} />
         <Routes>
           <Route path="*" element={<PageNotFound />} />
@@ -34,7 +44,9 @@ function App() {
             path="/gallery/:type/album"
             element={<DisplayPhotos />}
           />
+          <Route exact path="/videography" element={<Videography />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

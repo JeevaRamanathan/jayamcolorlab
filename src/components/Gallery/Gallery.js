@@ -6,6 +6,7 @@ import OtherWedding from "./OtherWedding";
 import PPEngagement from "./PPEngagement";
 import Birthday from "./Birthday";
 import CoorporateEvents from "./CoorporateEvents";
+import Album from "./Album";
 export default function Gallery(params) {
   const { type } = useParams();
 
@@ -22,6 +23,8 @@ export default function Gallery(params) {
       return <Birthday type={type} />;
     case "corporateEvents":
       return <CoorporateEvents type={type} />;
+    case "albums":
+      return <Album type={type} />;
     default:
       return <PageNotFound />;
   }

@@ -1,22 +1,23 @@
+import { Album as AB } from "./GalleryData";
 import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
 import Nodata from "../lotties/nodata.json";
 import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
-import { ChettinadWedding as CW } from "./GalleryData";
-export default function ChettinadWedding(props) {
+
+export default function Album(props) {
   const navigate = useNavigate();
 
   return (
     <React.Fragment>
       <div style={{ marginTop: "4rem" }}>
         <div className="container pt-4">
-          <span className="headingText">{CW["title"]} </span>
-          <div className="bodyText mt-3 mb-4">{CW.body} </div>
+          <span className="headingText">{AB["title"]} </span>
+          {/* <div className="bodyText mt-3 mb-4">{AB.body} </div> */}
           <div className="row">
-            {CW.images.length > 0 ? (
-              CW.images.map((data, index) => {
+            {AB.images.length > 0 ? (
+              AB.images.map((data, index) => {
                 return (
                   <div
                     key={index}
@@ -40,7 +41,8 @@ export default function ChettinadWedding(props) {
                         style={{ objectFit: "cover" }}
                         src={
                           // window.location.origin +
-                          process.env.PUBLIC_URL + CW.images[index].thumbnail
+                          // "/" +
+                          process.env.PUBLIC_URL + AB.images[index].thumbnail
                         }
                         alt="Image"
                       />

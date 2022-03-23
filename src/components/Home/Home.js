@@ -1,29 +1,47 @@
 import React from "react";
 import "./Home.css";
-import { Link } from "react-router-dom";
-import NavBar from "../NavBar/NavBar";
 import Slider from "../Carousel/Slider";
 import Services from "../Services/Services";
 import { FaGifts } from "react-icons/fa";
 import CountUp from "react-countup";
+import FadeInSection from "../../FadeInSection";
 import VisibilitySensor from "react-visibility-sensor";
 import { MdRestore, MdPhotoAlbum } from "react-icons/md";
 
-export default class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
+import Lottie from "lottie-react";
+import animationData from "../lotties/photographer.json";
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 1,
+  },
+};
 
-  componentDidMount() {}
-
-  render() {
-    return (
-      <React.Fragment>
-        {/* <NavBar active={"home"} /> */}
-        <Slider />
-        <div style={{ height: "91.8vh" }}></div>
+export default function Home() {
+  // render() {
+  return (
+    <React.Fragment>
+      {/* <NavBar active={"home"} /> */}
+      <Slider />
+      <div style={{ height: "91.8vh" }}></div>
+      <FadeInSection>
         <Services home={"false"} />
-        <div className="homeImg">
+      </FadeInSection>
+      <div className="homeImg">
+        <FadeInSection>
           <div className="container">
             <div className="homeText">
               {" "}
@@ -60,7 +78,9 @@ export default class Home extends React.Component {
               <br />
             </div>
           </div>
-        </div>
+        </FadeInSection>
+      </div>
+      <FadeInSection>
         <div class="container mt-4 ">
           <div class="row">
             <div class="col-sm">
@@ -144,7 +164,46 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div className="countImg">
+      </FadeInSection>
+
+      <FadeInSection>
+        <div class="container mt-2 ">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <Lottie
+                style={{
+                  height: 230,
+                }}
+                animationData={animationData}
+                loop={true}
+              />
+            </div>
+            <div class="col-sm">
+              <div class="row mt-5">
+                <div class="col-auto">
+                  <img
+                    src="chettinadspcl.png"
+                    style={{ height: "40px", width: "40px" }}
+                  />
+                </div>
+                <div class="col">
+                  <h4 class="homeText2">
+                    We are more Specialized in Chettinad Wedding!
+                  </h4>
+                  <p class="card-text homeText3">
+                    We are more experienced in handling chettinad wedding, in
+                    the surrounding of karaikudi region knowing the rituals and
+                    capturing them in the Authentic Chettinad Style!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </FadeInSection>
+
+      <div className="countImg">
+        <FadeInSection>
           <div className="container">
             <div className="homeText">
               {" "}
@@ -160,7 +219,7 @@ export default class Home extends React.Component {
               >
                 <div className="row">
                   <div className="col-sm p-4 homeText">
-                    <CountUp end={100} duration={1}>
+                    <CountUp end={18} duration={1}>
                       {({ countUpRef, start }) => (
                         <VisibilitySensor onChange={start} delayedCall>
                           <span ref={countUpRef} />
@@ -169,7 +228,7 @@ export default class Home extends React.Component {
                     </CountUp>
                     +
                     <br />
-                    In Industry{""}
+                    Years In Industry{""}
                   </div>
                   <div className="col-sm p-4  homeText">
                     <CountUp end={1000000} duration={1}>
@@ -208,8 +267,9 @@ export default class Home extends React.Component {
               <br />
             </div>
           </div>
-        </div>{" "}
-      </React.Fragment>
-    );
-  }
+        </FadeInSection>
+      </div>
+    </React.Fragment>
+  );
+  // }
 }
