@@ -6,7 +6,11 @@ import TextField from "@mui/material/TextField";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephonePlusFill } from "react-icons/bs";
 import { BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
+import { SiGmail } from "react-icons/si";
 import { Formik, Form } from "formik";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import FontAwesome from "react-fontawesome";
+// import faStyles from "font-awesome/css/font-awesome.css";
 import * as yup from "yup";
 // import { send } from "emailjs-com";
 // import emailjs from "@emailjs/browser";
@@ -69,6 +73,17 @@ export default class Contact extends React.Component {
                   >
                     +91 94864 91801
                   </a>
+                  <FontAwesome
+                    // className="super-crazy-colors"
+                    name="fa-solid fa-circle-phone"
+                    size="2x"
+                    // spin
+                    style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+                  />
+                  {/* <FontAwesomeIcon icon="fa-duotone fa-phone-office">
+
+                  </FontAwesomeIcon> */}
+                  {/* 0431 2700250 */}
                 </span>
                 <hr />
                 <p className="contactText">Email</p>
@@ -118,6 +133,20 @@ export default class Contact extends React.Component {
                     target={"_blank"}
                   >
                     <BsInstagram
+                      style={{
+                        fontSize: "35px",
+                        color: "#5f5b69",
+                        marginRight: "16px",
+                      }}
+                    />
+                  </a>
+
+                  <a
+                    className="iconHov"
+                    href="mailto:studiojayam@gmail.com;jayamcolorlab@gmail.com"
+                    target={"_blank"}
+                  >
+                    <SiGmail
                       style={{
                         fontSize: "35px",
                         color: "#5f5b69",
@@ -275,12 +304,17 @@ export default class Contact extends React.Component {
 
         <div className="mapouter">
           <div className="gmap_canvas">
-            <iframe
+            {/* <iframe
               width="100%"
               height="260"
               id="gmap_canvas"
               src="https://maps.google.com/maps?q=jayam%20color%20lab,%20trichy&t=&z=19&ie=UTF8&iwloc=&output=embed"
               scrolling="no"
+            ></iframe> */}{" "}
+            <iframe
+              width="100%"
+              frameborder="0"
+              <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jayam%20Color%20Lab,%20Trichy+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             ></iframe>
           </div>
         </div>

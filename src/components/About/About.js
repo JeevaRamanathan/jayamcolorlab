@@ -27,15 +27,17 @@ export default class About extends React.Component {
           <div className="container">
             <div className="row content">
               <div className="col-sm p-3">
-                <h2 className="underlinetext">
+                <h2 className="underlinetext1" style={{ fontSize: "29px" }}>
                   Welcome to Jayam Color Lab & Studio
                 </h2>
-                <p className="abouttext">
+
+                <p className="abouttext pt-3">
                   {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
-                  Jayam Color Lab & Studio was established in the year of 2006
-                  in Trichy and owned by Mr.Muthu Ram who is experienced in the
-                  photography field for more than 18 years. We are specialized
-                  in wedding photography, studio photography, designing.
+                  Jayam Color Lab & Studio was established in the year of 2004
+                  in Trichy and owned by Mr.Muthu Ram Bhuvaneswari who is
+                  experienced in the photography field for more than 18 years.
+                  We are specialized in wedding photography, studio photography,
+                  designing.
                   <br />
                   <br />
                   {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
@@ -51,15 +53,18 @@ export default class About extends React.Component {
                   <br />
                   <br />
                   {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
-                  We respect our client thoughts and we do give our best
-                  services. We undertake all kinds of events like wedding,
-                  engagement, baby shoot, birthday, coorporate meetings and all
-                  other events.And we are more specilized in chettinad wedding
-                  photography.
-                  <br />
-                  <br />
-                  We also do album editing, designing photos, flex editing,
-                  collage work and so on.
+                  We respect your thoughts and we do give our best services. We
+                  undertake all kinds of events like wedding, engagement, baby
+                  shoot, birthday, coorporate meetings and all other events. We
+                  also do album editing, designing photos, flex editing, collage
+                  work and so on.
+                  <hr />
+                  <center>
+                    <b>
+                      We are more specilized in chettinad wedding photography.
+                    </b>
+                  </center>{" "}
+                  <hr />
                 </p>
               </div>
               <div className="col-lg">
@@ -83,11 +88,17 @@ export default class About extends React.Component {
                     STYLE
                   </div>
                   <div class="card-body">
-                    <p class="card-text homeBox">
-                      We follow our unique photography style in the current
+                    <p class="card-text homeBox2">
+                      {/* We follow our unique photography style in the current
                       trend, everyone having the camera can take photos but we
                       are professional in that having experience knowing the
-                      best angles and shots to get the outcome more perfect :)
+                      best angles and shots to get the outcome more perfect :) */}
+                      We follow our unique photography style in the current
+                      trend. Anyone can capture the photo, but only
+                      professionals and experience can make best angles and
+                      shots. In this context we are experienced in capturing the
+                      right moments in right angles and makes the outcome
+                      perfect :)
                     </p>
                   </div>
                 </div>
@@ -105,10 +116,10 @@ export default class About extends React.Component {
                     Equipments
                   </div>
                   <div class="card-body">
-                    <p class="card-text homeBox">
-                      We use the latest camera equipments with tripod,
+                    <p class="card-text homeBox2">
+                      We use the modern camera equipments with tripod,
                       lightstand, zooming lens, studio strobes and umbrellas and
-                      all the necessary equipments with the latest model.
+                      all the necessary equipments.
                     </p>
                   </div>
                 </div>
@@ -117,7 +128,7 @@ export default class About extends React.Component {
                 <div class="aboutcard" style={{ width: "22rem" }}>
                   <img
                     class="card-img-top rod"
-                    src="budget.jpg"
+                    src="budget1.jpg"
                     alt="Card image cap"
                     style={{ objectFit: "cover" }}
                   />
@@ -125,10 +136,9 @@ export default class About extends React.Component {
                     Budget
                   </div>
                   <div class="card-body">
-                    <p class="card-text homeBox">
-                      When it comes to budget, cool don't worry, we do in a most
-                      affordable price depending upon the type of package that
-                      the client wants!
+                    <p class="card-text homeBox2">
+                      When it comes to budget, we do in a most affordable cost
+                      depending upon the type of package that suits you!
                     </p>
                   </div>
                 </div>

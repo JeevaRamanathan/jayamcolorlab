@@ -19,7 +19,6 @@ const NavBar = (props) => {
   };
 
   useEffect(() => {
-  
     window.addEventListener("scroll", changeNavbarColor);
   });
 
@@ -45,7 +44,7 @@ const NavBar = (props) => {
       >
         <div className="container">
           <Link to="/">
-            <img src="jcllogo.png" style={{ height: "40px" }} alt="Logo" />
+            <img src="/jcllogo.png" style={{ height: "40px" }} alt="Logo" />
           </Link>
           <div
             className="navbar-toggler"
@@ -277,8 +276,6 @@ const NavBar = (props) => {
                 </li>
               </Link>
             </ul>
-
-            
 
             <ul className="navbar-nav ml-auto">
               <Link to="/contact">

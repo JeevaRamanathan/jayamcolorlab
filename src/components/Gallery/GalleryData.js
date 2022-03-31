@@ -1,6 +1,6 @@
 export const wedding = {
   title: "Wedding",
-  body: "Wedding photography is the art of capturing one of the most important days in a person's life. We create unique,everlasting memories that you families treasure for a lifetime. We capture the big moments and take candid photos throughout the day at various points. From candid family portraits to beautifully composed formal shots, we will be a constant presence at the event capturing every beautiful and joyous detail. We include the following things with this Candid & Traditional Photography, Tradtional Videography of 2-3hrs of entire wedding and Cinematic videography which can  be customized as per clients choice :)",
+  body: "Wedding photography is the art of capturing one of the most important days in a person's life. We create unique, everlasting memories that you and your families cherish for a lifetime. We capture the big moments and take candid photos throughout the day at various points. From candid family portraits to beautifully composed formal shots, we will be a constant presence at the event capturing every beautiful and joyous detail. We include the following things with this Candid & Traditional photography, Traditional videography of 2-3 hours of entire wedding and cinematic videography which can be customized as per your choice :)",
   images: [],
 };
 
@@ -12,17 +12,23 @@ export const ChettinadWedding = {
       id: 1,
       title: "Thiyagarajan & Manibala",
       location: "Nerkuppai",
-      url: "/Gallery/Wedding/w1",
+      url: "v1646849357/photography/wedding/w1/img_",
+      lgUrl:
+        "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w1/",
       count: 19,
-      thumbnail: "/Gallery/Wedding/w1/img(6).jpg",
+      thumbnail:
+        "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w1/img_6.jpg",
     },
     {
       id: 2,
       title: "Senthil & Valli",
       location: "Kulipirai",
-      url: "/Gallery/Wedding/w2",
+      url: "v1646849357/photography/wedding/w2/img_",
+      lgUrl:
+        "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w2/",
       count: 12,
-      thumbnail: "/Gallery/Wedding/w2/img(4).jpg",
+      thumbnail:
+        "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w2/img_4.jpg",
     },
   ],
 };
@@ -35,13 +41,13 @@ export const OtherWedding = {
 
 export const PPWE = {
   title: "Pre/Post Wedding & Engagement",
-  body: "Engagement photography is a session where we capture the raw emotion from your ring exchange ceremony. Engagement is one of the most significant events in your life. And it deserves to be captured with an amazing photoshoot. The wedding day comes with some predefined rules. The rules of particular dress code and rituals can restrict you. But with engagement and Pre/Post Wedding photography, you can play with your outfit and setup. From various quirky themes to different setups, it gives you the freedom to exercise your creativity. We do with the latest trends in photography which will making your pictures amusing.",
+  body: "Engagement photography is a session where we capture the raw emotion from your ring exchange ceremony. Engagement is one of the most significant events in your life. And it deserves to be captured with an amazing photoshoot. The wedding day comes with some predefined rules. The rules of particular dress code and rituals can restrict you. But with engagement and Pre/Post Wedding photography, you can play with your outfit and setup. From various quirky themes to different setups, it gives you the freedom to exercise your creativity. We do with the latest trends in photography which will making your pictures amazing.",
   images: [],
 };
 
 export const Birthday = {
   title: "Birthday",
-  body: "When you are young, one of the most special days of the year is your birthday. Whether it’s a home party or a special day out, being creative and flexible is the best way to catch memorable birthday images.Children can be temperamental at the best of times, so always be ready to capture the smiles when they occur which will defenitely make them joyful when they see those in later days. So don't wait for booking for a professional bithday photoshoot. Book Now!",
+  body: "When you are young, one of the most special days of the year is your birthday. Whether it’s a home party or a special day out, being creative and flexible is the best way to catch memorable birthday images.Children can be temperamental at the best of times, so always be ready to capture the smiles when they occur which will defenitely make them joyful when they see those in later days.",
   images: [],
 };
 
@@ -52,6 +58,12 @@ export const CorporateEvents = {
 };
 export const Album = {
   title: "Album",
-  body: "",
+  body: "The perfect wedding photo book allows you to relive your magical day forever. We deliver the captured moments in well organized and amazing album with our expertise editing works.  ",
+  images: [],
+};
+
+export const Puberty = {
+  title: "Puberty",
+  body: "One of the most celebrated event in a girls life is when she reaches her puberty. We capture the moment lively and in more traditional or modern way as per your request with our professionals and advanced cameras and equipment's.",
   images: [],
 };

@@ -43,11 +43,11 @@ export default class Services extends React.Component {
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4 ">
                         We have the expertise in all kinds of photography
-                        includng candid photography. We take photoshoots for all
-                        kinds of events like Wedding,Pre/Post wedding,
-                        Maternity, Born Baby Shoot, Birthday, Reception &
+                        including candid photography. We take photoshoots for
+                        all kinds of events like Wedding,Pre/Post wedding,
+                        Maternity, New Born Baby Shoot, Birthday, Reception &
                         Engagement, Puberty, Corporate Events, Family Events and
-                        So on...
+                        so on...
                       </p>
                       {/* <Link className="mt-auto" to="/gallery/photography">
                         <span
@@ -79,13 +79,12 @@ export default class Services extends React.Component {
                       <p className="card-text mb-4">
                         A event doesn't end just with a photoshoot, videos
                         brings us the moment live before our eyes. We do also
-                        capture videos for all the same events in a professional
-                        way.
+                        capture videos for all the events in a professional way.
                         <br />
                         <br />
-                        We deliver you a short cinematic kind of wedding video
-                        with the candid shots and a music that makes you the
-                        event memorable and brings you joy.
+                        We also deliver you a short cinematic kind of wedding
+                        video with the candid shots and a music that makes you
+                        the event memorable and brings you joy.
                       </p>
                       {/* <div
                         className="btn viewbtn mt-auto align-self-center"
@@ -120,7 +119,7 @@ export default class Services extends React.Component {
                         final Album which will be with you forever. <br />
                         <br /> Also we fix the damaged old photos and bring
                         color to b/w photographs, flex editing, collage and
-                        etc., in our studio.
+                        etc., at affordable cost in our studio.
                       </p>
                       {/* <div
                         className="btn viewbtn mt-auto align-self-center"
@@ -151,11 +150,13 @@ export default class Services extends React.Component {
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4">
                         Framing some important memories in wall makes that
-                        moment memorable. We provide many gift items that you
-                        can choose present for your loved ones.
+                        moment more memorable. We have wide variety of gift
+                        items that you can choose as a present for your loved
+                        ones at affordable price.
                         <br />
                         <br />
-                        We do services all around the India and just whatsapp or
+                        {/* We do services all around the India and just whatsapp or */}
+                        Our services is extended all around the India and just whatsapp or
                         email us, we will deliver the frame and gift items at
                         your doorstep.
                       </p>

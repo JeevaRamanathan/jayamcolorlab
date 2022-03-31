@@ -29,7 +29,6 @@ export default function Slider() {
 
   useEffect(() => {
     let interval = setInterval(() => {
-      console.log("Logs every minute");
       nextSlide();
     }, 4000);
 

@@ -49,16 +49,9 @@ export default function Home() {
               <br />
               <br />
               <br />
-              Weddings are Once in a Lifetime Event, Make them Memorable with
-              Our Photography!{" "}
-              <p
-                className="mt-2"
-                style={{
-                  fontSize: "14px",
-                  opacity: ".8",
-                  fontFamily: "Open Sans",
-                }}
-              >
+              Weddings are Once in a Lifetime Event, Make them More Memorable
+              with Our Photography!{" "}
+              <p className="mt-2 homeBox2">
                 A wedding happens only once in a lifetime. It’s an historic day
                 in the lives of the bride and groom, which is why we are so
                 passionate and dedicated to create an unforgettable experience
@@ -99,11 +92,12 @@ export default function Home() {
                 <div class="col">
                   <h4 class="homeText2">Restoration of Old Images</h4>
                   <p class="card-text homeText3">
-                    Photographs Forever can take a torn or faded and transform
-                    it into a beautifully-restored photo, suitable for framing.
-                    We preserve your original images by eliminating scratches,
-                    folds, tears and fading and enlarge it in suitable sizes
-                    with our edit.{" "}
+                    {/* Photographs forever can take a torn or faded and transform */}
+                    {/* it into a beautifully-restored photo, suitable for framing. */}
+                    We take your torn or old faded photograhs and transform them
+                    into a beautifully restored photo. We preserve your original
+                    images by eliminating scratches, folds, tears and fading and
+                    enlarge it in suitable sizes with our edit.{" "}
                   </p>
                 </div>
               </div>
@@ -124,11 +118,11 @@ export default function Home() {
                   <h4 class="homeText2">Personalized Photo Gitfs</h4>
                   <p class="card-text homeText3">
                     Make any occasion special with a personalized gift to your
-                    loved ones. Yoy may wonder what gifts can be made from
+                    loved ones. You may wonder what gifts can be made from
                     photos, we bring you the personalized gift items like
-                    digilized photo frame, photo calendar, Personalised Photo
-                    Key Ring, Mobile Case Printing, Photo Locket, Photo Magnets,
-                    Photo Mug, Photo T-Shirt and etc.., Just whatsapp us your
+                    Digitlized photo frame, Photo calendar, Personalised photo
+                    Key ring, Mobile case printing, Photo locket, Photo magnets,
+                    Photo mug, Photo T-Shirt and etc.., Just whatsapp us your
                     order and we will deliver it at your door step.
                   </p>
                 </div>
@@ -149,7 +143,7 @@ export default function Home() {
                   <h4 class="homeText2">Album Designing</h4>
                   <p class="card-text homeText3">
                     Photo albums let you preserve important memories. We provide
-                    clients a professionally designed wedding album with our
+                    you a professionally designed wedding album with our expert
                     designers.
                   </p>
                 </div>
@@ -192,7 +186,7 @@ export default function Home() {
                   </h4>
                   <p class="card-text homeText3">
                     We are more experienced in handling chettinad wedding, in
-                    the surrounding of karaikudi region knowing the rituals and
+                    the surrounding of Karaikudi region knowing the rituals and
                     capturing them in the Authentic Chettinad Style!
                   </p>
                 </div>

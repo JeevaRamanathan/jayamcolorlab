@@ -43,10 +43,11 @@
 }
 
 .abouttext {
-  color: #858585;
-  font-family: "Open Sans";
+  /* color: #858585; */
+  /* font-family: "Open Sans"; */
+  font-family: "Josefin Sans", sans-serif;
   text-align: justify;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .aboutcard {

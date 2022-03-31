@@ -5,6 +5,7 @@ import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
 import { ChettinadWedding as CW } from "./GalleryData";
+import { thumbnail } from "@cloudinary/url-gen/actions/resize";
 export default function ChettinadWedding(props) {
   const navigate = useNavigate();
 
@@ -40,7 +41,8 @@ export default function ChettinadWedding(props) {
                         style={{ objectFit: "cover" }}
                         src={
                           // window.location.origin +
-                          process.env.PUBLIC_URL + CW.images[index].thumbnail
+                          CW.images[index].thumbnail
+                          // process.env.PUBLIC_URL + CW.images[index].thumbnail
                         }
                         alt="Image"
                       />
@@ -54,7 +56,6 @@ export default function ChettinadWedding(props) {
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
                       >
-                        {data.title}
                         {data.title} / {data.location}
                       </div>
                     </div>

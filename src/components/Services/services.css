@@ -3,18 +3,29 @@
   text-align: center;
   align-items: center;
   cursor: pointer;
-  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
   /* font-family: "Oswald", sans-serif; */
   transition: transform 0.5s ease;
 }
-.homeBox:hover {
-  transform: scale(1.04);
-}
-.homeBoxHeading{
+
+.homeBox2 {
   text-align: center;
   align-items: center;
   cursor: pointer;
-  color: #2B394A;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  /* font-family: "Oswald", sans-serif; */
+}
+
+.homeBox:hover {
+  transform: scale(1.04);
+}
+.homeBoxHeading {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  color: #2b394a;
   /* font-family: 'Josefin Sans', sans-serif; */
   font-family: "Oswald", sans-serif;
   transition: transform 0.5s ease;
@@ -33,8 +44,40 @@
 
 .underlinetext {
   position: relative;
-  color: #2B394A;
+  color: #2b394a;
+  font-family: "Manrope";
+  font-weight: bold;
 }
+
+.underlinetext1 {
+  position: relative;
+  color: #2b394a;
+  font-family: "Manrope";
+  font-weight: bold;
+}
+
+.underlinetext1:after {
+  content: "";
+  position: absolute;
+  width: 52%;
+
+  height: 3%;
+  bottom: 0;
+  left: 23%;
+
+  /* background-color: #ff7000; */
+  background: #ee0979; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ee0979,
+    #ff6a00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  transform-origin: top;
+  transition: transform 0.25s ease-out;
+  -webkit-backface-visibility: hidden;
+}
+
 .underlinetext:after {
   content: "";
   position: absolute;
