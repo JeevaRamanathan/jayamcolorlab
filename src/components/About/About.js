@@ -31,7 +31,7 @@ export default class About extends React.Component {
                   Welcome to Jayam Color Lab & Studio
                 </h2>
 
-                <p className="abouttext pt-3">
+                <div className="abouttext pt-3">
                   {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
                   Jayam Color Lab & Studio was established in the year of 2004
                   in Trichy and owned by Mr.Muthu Ram Bhuvaneswari who is
@@ -65,7 +65,7 @@ export default class About extends React.Component {
                     </b>
                   </center>{" "}
                   <hr />
-                </p>
+                </div>
               </div>
               <div className="col-lg">
                 <Lottie animationData={animationData} loop={true} />
@@ -77,9 +77,9 @@ export default class About extends React.Component {
           <FadeInSection>
             <div className="row">
               <div className="col mb-4 d-flex justify-content-center">
-                <div class="aboutcard" style={{ width: "22rem" }}>
+                <div className="aboutcard" style={{ width: "22rem" }}>
                   <img
-                    class="card-img-top rod"
+                    className="card-img-top rod"
                     src="style.jpg"
                     alt="Card image cap"
                     style={{ objectFit: "cover" }}
@@ -87,8 +87,8 @@ export default class About extends React.Component {
                   <div className="underlinetextabout mt-2 d-flex justify-content-center">
                     STYLE
                   </div>
-                  <div class="card-body">
-                    <p class="card-text homeBox2">
+                  <div className="card-body">
+                    <p className="card-text homeBox2">
                       {/* We follow our unique photography style in the current
                       trend, everyone having the camera can take photos but we
                       are professional in that having experience knowing the
@@ -105,9 +105,9 @@ export default class About extends React.Component {
               </div>
               <div className="col mb-4 d-flex justify-content-center">
                 {" "}
-                <div class="aboutcard" style={{ width: "22rem" }}>
+                <div className="aboutcard" style={{ width: "22rem" }}>
                   <img
-                    class="card-img-top rod"
+                    className="card-img-top rod"
                     src="equipments.jpg"
                     alt="Card image cap"
                     style={{ objectFit: "cover" }}
@@ -115,8 +115,8 @@ export default class About extends React.Component {
                   <div className="underlinetextabout mt-2 d-flex justify-content-center">
                     Equipments
                   </div>
-                  <div class="card-body">
-                    <p class="card-text homeBox2">
+                  <div className="card-body">
+                    <p className="card-text homeBox2">
                       We use the modern camera equipments with tripod,
                       lightstand, zooming lens, studio strobes and umbrellas and
                       all the necessary equipments.
@@ -125,9 +125,9 @@ export default class About extends React.Component {
                 </div>
               </div>
               <div className="col mb-4 d-flex justify-content-center">
-                <div class="aboutcard" style={{ width: "22rem" }}>
+                <div className="aboutcard" style={{ width: "22rem" }}>
                   <img
-                    class="card-img-top rod"
+                    className="card-img-top rod"
                     src="budget1.jpg"
                     alt="Card image cap"
                     style={{ objectFit: "cover" }}
@@ -135,8 +135,8 @@ export default class About extends React.Component {
                   <div className="underlinetextabout mt-2 d-flex justify-content-center">
                     Budget
                   </div>
-                  <div class="card-body">
-                    <p class="card-text homeBox2">
+                  <div className="card-body">
+                    <p className="card-text homeBox2">
                       When it comes to budget, we do in a most affordable cost
                       depending upon the type of package that suits you!
                     </p>

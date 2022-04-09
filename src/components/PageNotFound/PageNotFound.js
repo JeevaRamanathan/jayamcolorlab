@@ -19,14 +19,14 @@ export default class PageNotFound extends React.Component {
           <div className="" style={{ marginTop: "7rem" }}>
             <Lottie
               style={{
-                height: 600,
-                width: "300",
+                height: 530,
+                width: "400",
               }}
               animationData={pagenotfound}
               loop={true}
             />
            
-            <div className="d-flex justify-content-center "> <Link to="/">
+            <div className="d-flex justify-content-center mb-3 "> <Link to="/">
               <button className="btnColor">Back To Home</button>
               </Link>
             </div>

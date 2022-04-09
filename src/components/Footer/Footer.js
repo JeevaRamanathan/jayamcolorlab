@@ -24,10 +24,17 @@ export default function Footer() {
               {" "}
               <a
                 style={{ textDecoration: "none", color: "white" }}
+                href="https://www.google.com/maps/place/Jayam+Color+Lab+%26+Studio,+Trichy/@10.8321029,78.6905853,17z/data=!3m1!4b1!4m5!3m4!1s0x3baaf5b0ef29ea07:0xd1ce3b55aadd7a6d!8m2!3d10.8321029!4d78.692774"
+                target={"_blank"}
+              >
+                {" "}
+                A-63, St.Joseph Complex Chatiram Bus Stand, Trichy - 02 | 
+              </a>
+              <a
+                style={{ textDecoration: "none", color: "white" }}
                 href="tel:+919486491801"
               >
-                A-63, St.Joseph Complex Chatiram Bus Stand, Trichy - 02 | +91
-                94864 91801 |{" "}
+               {"  "} +91 94864 91801 |{" "}
               </a>
               <a
                 style={{ textDecoration: "none", color: "white" }}

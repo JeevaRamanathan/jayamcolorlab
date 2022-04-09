@@ -7,9 +7,7 @@ import CountUp from "react-countup";
 import FadeInSection from "../../FadeInSection";
 import VisibilitySensor from "react-visibility-sensor";
 import { MdRestore, MdPhotoAlbum } from "react-icons/md";
-
-import Lottie from "lottie-react";
-import animationData from "../lotties/photographer.json";
+import { Link } from "react-router-dom";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -66,6 +64,9 @@ export default function Home() {
                 So don't wait until your last minute of wedding...Book Us Now!
               </p>
               <br />
+              {/* <Link to="/contact" style={{textDecoration:"none", border:'none'}} className="btn btn-warning">
+                Book Now!
+              </Link> */}
               <br />
               <br />
               <br />
@@ -74,11 +75,11 @@ export default function Home() {
         </FadeInSection>
       </div>
       <FadeInSection>
-        <div class="container mt-4 ">
-          <div class="row">
-            <div class="col-sm">
-              <div class="row mt-5">
-                <div class="col-auto">
+        <div className="container mt-4 ">
+          <div className="row">
+            <div className="col-sm">
+              <div className="row mt-5">
+                <div className="col-auto">
                   <MdRestore
                     style={{
                       fontSize: "55px",
@@ -89,9 +90,9 @@ export default function Home() {
                     className="mb-1"
                   ></MdRestore>
                 </div>
-                <div class="col">
-                  <h4 class="homeText2">Restoration of Old Images</h4>
-                  <p class="card-text homeText3">
+                <div className="col">
+                  <h4 className="homeText2">Restoration of Old Images</h4>
+                  <p className="card-text homeText3">
                     {/* Photographs forever can take a torn or faded and transform */}
                     {/* it into a beautifully-restored photo, suitable for framing. */}
                     We take your torn or old faded photograhs and transform them
@@ -102,8 +103,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div class="row mt-5">
-                <div class="col-auto">
+              <div className="row mt-5">
+                <div className="col-auto">
                   <FaGifts
                     style={{
                       fontSize: "55px",
@@ -114,9 +115,9 @@ export default function Home() {
                     className="mb-1"
                   ></FaGifts>
                 </div>
-                <div class="col">
-                  <h4 class="homeText2">Personalized Photo Gitfs</h4>
-                  <p class="card-text homeText3">
+                <div className="col">
+                  <h4 className="homeText2">Personalized Photo Gitfs</h4>
+                  <p className="card-text homeText3">
                     Make any occasion special with a personalized gift to your
                     loved ones. You may wonder what gifts can be made from
                     photos, we bring you the personalized gift items like
@@ -127,8 +128,8 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div class="row mt-5">
-                <div class="col-auto">
+              <div className="row mt-5">
+                <div className="col-auto">
                   <MdPhotoAlbum
                     style={{
                       fontSize: "55px",
@@ -139,9 +140,9 @@ export default function Home() {
                     className="mb-1"
                   ></MdPhotoAlbum>
                 </div>
-                <div class="col">
-                  <h4 class="homeText2">Album Designing</h4>
-                  <p class="card-text homeText3">
+                <div className="col">
+                  <h4 className="homeText2">Album Designing</h4>
+                  <p className="card-text homeText3">
                     Photo albums let you preserve important memories. We provide
                     you a professionally designed wedding album with our expert
                     designers.
@@ -149,11 +150,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="col d-flex justify-content-center">
+            <div className="col d-flex justify-content-center">
               <img
-                className="homeHov"
+                // className="homeH ov"
                 src="homeimg.png"
-                style={{ height: "90%", width: "90%", objectFit: "contain" }}
+                style={{ height: "120%", width: "100%", objectFit: "contain" }}
               />
             </div>
           </div>
@@ -161,30 +162,37 @@ export default function Home() {
       </FadeInSection>
 
       <FadeInSection>
-        <div class="container mt-2 ">
-          <div class="row">
-            <div class="col d-flex justify-content-center">
-              <Lottie
+        <div className="container mt-5">
+          <div className="row">
+            <div className="col d-flex justify-content-center">
+              {/* <Lottie
                 style={{
                   height: 230,
                 }}
                 animationData={animationData}
                 loop={true}
+              /> */}
+              <img
+                src="marraigehome.png"
+                style={{
+                  height: 240,
+                  marginRight: "30px",
+                }}
               />
             </div>
-            <div class="col-sm">
-              <div class="row mt-5">
-                <div class="col-auto">
+            <div className="col-sm">
+              <div className="row mt-5">
+                <div className="col-auto">
                   <img
                     src="chettinadspcl.png"
                     style={{ height: "40px", width: "40px" }}
                   />
                 </div>
-                <div class="col">
-                  <h4 class="homeText2">
+                <div className="col">
+                  <h4 className="homeText2">
                     We are more Specialized in Chettinad Wedding!
                   </h4>
-                  <p class="card-text homeText3">
+                  <p className="card-text homeText3">
                     We are more experienced in handling chettinad wedding, in
                     the surrounding of Karaikudi region knowing the rituals and
                     capturing them in the Authentic Chettinad Style!
@@ -203,7 +211,7 @@ export default function Home() {
               {" "}
               <br />
               <br />
-              <p
+              <div
                 className="mt-2"
                 style={{
                   fontSize: "14px",
@@ -256,7 +264,7 @@ export default function Home() {
                     </VisibilitySensor>
                   )}
                 </CountUp> */}
-              </p>
+              </div>
               <br />
               <br />
             </div>

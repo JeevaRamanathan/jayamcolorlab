@@ -53,12 +53,12 @@ function Header() {
 
   function navbarButton() {
     return (
-      <div class="pos-f-t nav-menu">
+      <div className="pos-f-t nav-menu">
         <div
-          class={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
+          className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}
           id="navbarToggleExternalContent"
         >
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             {navbarElements.map((key, index) => (
               <li
                 className={
@@ -78,9 +78,9 @@ function Header() {
             ))}
           </ul>
         </div>
-        <nav class="navbar navbar-dark ">
+        <nav className="navbar navbar-dark ">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarToggleExternalContent"
@@ -89,7 +89,7 @@ function Header() {
             aria-label="Toggle navigation"
             onClick={() => handleNavCollapse(true)}
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
         </nav>
       </div>

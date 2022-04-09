@@ -45,13 +45,13 @@ export default function Wedding(props) {
                         }
                         alt="Image"
                       />
-                      <div class="middle">
-                        <div class="imgText">{data.title}</div>
+                      <div className="middle">
+                        <div className="imgText">{data.title}</div>
                         <br />
-                        <div class="locationText">{data.location}</div>
+                        <div className="locationText">{data.location}</div>
                       </div>
                       <div
-                        class="locationText"
+                        className="locationText"
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
                       >

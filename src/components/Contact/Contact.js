@@ -66,24 +66,31 @@ export default class Contact extends React.Component {
                   color={"#928D9E"}
                 />
 
-                <span className="mt-3 mr-3 text1">
+                <span className="mt-2 mr-3 text1">
                   <a
                     style={{ textDecoration: "none", color: "#313131" }}
                     href="tel:+919486491801"
                   >
                     +91 94864 91801
                   </a>
-                  <FontAwesome
-                    // className="super-crazy-colors"
-                    name="fa-solid fa-circle-phone"
-                    size="2x"
-                    // spin
-                    style={{ textShadow: "0 1px 0 rgba(0, 0, 0, 0.1)" }}
+                  <br />
+                  <img
+                    src="teleph.png"
+                    className="mt-2"
+                    height={30}
+                    width={30}
                   />
+
+                  <a
+                    style={{ textDecoration: "none", color: "#313131" }}
+                    href="tel:04312706519"
+                  >
+                    &nbsp;{"        "} 0431 2706519
+                  </a>
                   {/* <FontAwesomeIcon icon="fa-duotone fa-phone-office">
 
                   </FontAwesomeIcon> */}
-                  {/* 0431 2700250 */}
+                  {/* 0431 2706519 */}
                 </span>
                 <hr />
                 <p className="contactText">Email</p>
@@ -304,17 +311,12 @@ export default class Contact extends React.Component {
 
         <div className="mapouter">
           <div className="gmap_canvas">
-            {/* <iframe
+            <iframe
               width="100%"
               height="260"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=jayam%20color%20lab,%20trichy&t=&z=19&ie=UTF8&iwloc=&output=embed"
+              src="https://maps.google.com/maps?q=Jayam%20Color%20Lab,%20and%20Studio,%20Trichy&t=&z=19&ie=UTF8&iwloc=&output=embed&zoom=33"
               scrolling="no"
-            ></iframe> */}{" "}
-            <iframe
-              width="100%"
-              frameborder="0"
-              <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Jayam%20Color%20Lab,%20Trichy+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             ></iframe>
           </div>
         </div>

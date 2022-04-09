@@ -29,7 +29,7 @@ function App() {
           style={{textDecoration:"none",color:"white"}}
           target="_blank"
         >
-          <i class="fa fa-whatsapp my-float"></i>
+          <i className="fa fa-whatsapp my-float"></i>
         </a>
         <NavBar active={active} />
         <Routes>

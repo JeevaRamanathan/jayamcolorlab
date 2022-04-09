@@ -6,6 +6,7 @@ import lgZoom from "lightgallery/plugins/zoom";
 import lgFullscreen from "lightgallery/plugins/fullscreen";
 import lgHash from "lightgallery/plugins/hash";
 import lgAutoplay from "lightgallery/plugins/autoplay";
+import { useNavigate } from "react-router-dom";
 
 import "lightgallery/css/lightgallery-bundle.css";
 import "lightgallery/css/lightgallery.css";
@@ -42,6 +43,8 @@ const cld = new Cloudinary({
 // const myImage=cld.image("resources/search/JYM")
 export default function DisplayPhotos(props) {
   const { state } = useLocation();
+  const navigate = useNavigate();
+  state == null && navigate("/home")
   return (
     <div style={{ backgroundColor: "#1a1a1a" }}>
       <div style={{ marginTop: "0rem" }}>
