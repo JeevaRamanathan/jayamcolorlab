@@ -33,8 +33,8 @@ export default function Slider() {
             key={index}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            Some Random Images
-            {/* <img id="img" src={obj.url} /> */}
+            
+            <img id="img" src={obj.url} />
           </div>
         );
       })}

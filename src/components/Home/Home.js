@@ -45,7 +45,7 @@ export default function Home() {
               <p>So don't wait until last minute of wedding...Book Us Now!</p>
               <br />
               <a
-                href="https://api.whatsapp.com/send?phone=919486491801&text=Hi, I would like to enquiry about the wedding with you!"
+                href="https://api.whatsapp.com/send?phone=919486491801&text=Hi, I would like to enquiry about the wedding photography with you!"
                 target="_blank"
                 style={{ textDecoration: "none", border: "none" }}
                 className="btn btn-warning"
@@ -135,11 +135,12 @@ export default function Home() {
             </div>
             <div className="col d-flex justify-content-center">
               <img
-                src="homeimg.jpg"
+                src="homeimg.png"
                 style={{ height: "120%", width: "100%", objectFit: "contain" }}
               />
             </div>
           </div>
+          <br />
         </div>
       </FadeInSection>
 
@@ -183,6 +184,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <br />
         </div>
       </FadeInSection>
 

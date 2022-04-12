@@ -63,7 +63,7 @@ export default function Album(props) {
                         width={700}
                         style={{ objectFit: "cover" }}
                         cldImg={cldn.image(`${AB.images[index].thumbnail}`)}
-                        plugins={[responsive({ steps: 200 })]}
+                        plugins={[responsive({steps: [800, 1000, 1400]})]} 
                       />
                       <div class="middle">
                         <br />

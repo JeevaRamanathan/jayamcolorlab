@@ -52,15 +52,13 @@ export default function ChettinadWedding(props) {
                         src={CW.images[index].thumbnail}
                         alt="Image"
                       /> */}
-                       <AdvancedImage
+                      <AdvancedImage
                         className="galleryImg"
                         height={500}
                         width={700}
                         style={{ objectFit: "cover" }}
-                        cldImg={cldn.image(
-                          `${CW.images[index].thumbnail}`
-                        )}
-                        plugins={[responsive({ steps: 200 })]}
+                        cldImg={cldn.image(`${CW.images[index].thumbnail}`)}
+                        plugins={[responsive({steps: [800, 1000, 1400]})]} 
                       />
                       <div className="middle">
                         <div className="imgText">{data.title}</div>

@@ -59,7 +59,7 @@ export default function DisplayPhotos(props) {
                           cldImg={cld.image(
                             `${state.data.url}${index + 1}.jpg`
                           )}
-                          plugins={[responsive({ steps: 200 })]}
+                          plugins={[responsive({steps: [800, 1000, 1400]})]} 
                         />
                       </div>
                     </a>

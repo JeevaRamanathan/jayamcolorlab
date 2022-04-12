@@ -65,7 +65,7 @@ export default function PPEngagement(props) {
                         cldImg={cldn.image(
                           `${PPWE.images[index].thumbnail}`
                         )}
-                        plugins={[responsive({ steps: 200 })]}
+                        plugins={[responsive({steps: [800, 1000, 1400]})]} 
                       />
 
                       <div className="middle">

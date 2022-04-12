@@ -10,8 +10,7 @@ export const wedding = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/nwedding/w1/",
       count: 14,
-      thumbnail:
-        "v1646849357/photography/nwedding/w1/img_14.jpg",
+      thumbnail: "v1646849357/photography/nwedding/w1/img_14.jpg",
     },
     {
       id: 2,
@@ -21,8 +20,7 @@ export const wedding = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/nwedding/w2/",
       count: 9,
-      thumbnail:
-        "v1646849357/photography/nwedding/w2/img_6.jpg",
+      thumbnail: "v1646849357/photography/nwedding/w2/img_6.jpg",
     },
   ],
 };
@@ -39,8 +37,7 @@ export const ChettinadWedding = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w2/",
       count: 12,
-      thumbnail:
-        "v1646849357/photography/wedding/w2/img_1.jpg",
+      thumbnail: "v1646849357/photography/wedding/w2/img_1.jpg",
     },
     {
       id: 3,
@@ -50,8 +47,7 @@ export const ChettinadWedding = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w3/",
       count: 22,
-      thumbnail:
-        "v1646849357/photography/wedding/w3/img_22.jpg",
+      thumbnail: "v1646849357/photography/wedding/w3/img_22.jpg",
     },
     {
       id: 1,
@@ -60,9 +56,8 @@ export const ChettinadWedding = {
       url: "v1646849357/photography/wedding/w1/img_",
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w1/",
-      count: 19,
-      thumbnail:
-        "v1646849357/photography/wedding/w1/img_8.jpg",
+      count: 18,
+      thumbnail: "v1646849357/photography/wedding/w1/img_8.jpg",
     },
   ],
 };
@@ -79,8 +74,7 @@ export const OtherWedding = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/owedding/w1/",
       count: 10,
-      thumbnail:
-        "v1646849357/photography/wedding/w2/img_1.jpg",
+      thumbnail: "v1646849357/photography/owedding/w1/img_1.jpg",
     },
   ],
 };
@@ -91,14 +85,13 @@ export const PPWE = {
   images: [
     {
       id: 1,
-      title: "Name & Name",
+      title: "Sundaram & Puppy",
       location: "Pre-Post Wedding",
       url: "v1646849357/photography/ppe/f2/img_",
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/ppe/f2/",
-      count: 11,
-      thumbnail:
-        "v1646849357/photography/ppe/f2/img_7.jpg",
+      count: 10,
+      thumbnail: "v1646849357/photography/ppe/f2/img_9.jpg",
     },
     {
       id: 2,
@@ -108,8 +101,7 @@ export const PPWE = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/ppe/f1/",
       count: 5,
-      thumbnail:
-        "v1646849357/photography/ppe/f2/img_1.jpg",
+      thumbnail: "v1646849357/photography/ppe/f1/img_1.jpg",
     },
   ],
 };
@@ -126,8 +118,7 @@ export const Birthday = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/bdayandpub/f1/",
       count: 16,
-      thumbnail:
-        "v1646849357/photography/bdayandpub/f1/img_5.jpg",
+      thumbnail: "v1646849357/photography/bdayandpub/f1/img_5.jpg",
     },
     {
       id: 2,
@@ -137,8 +128,7 @@ export const Birthday = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/bdayandpub/f2/",
       count: 16,
-      thumbnail:
-        "v1646849357/photography/bdayandpub/f2/img_5.jpg",
+      thumbnail: "v1646849357/photography/bdayandpub/f2/img_5.jpg",
     },
   ],
 };
@@ -155,8 +145,7 @@ export const CorporateEvents = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/others/f3/",
       count: 11,
-      thumbnail:
-        "v1646849357/photography/others/f3/img_5.jpg",
+      thumbnail: "v1646849357/photography/others/f3/img_5.jpg",
     },
     {
       id: 2,
@@ -166,8 +155,7 @@ export const CorporateEvents = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/others/f2/",
       count: 12,
-      thumbnail:
-        "v1646849357/photography/others/f3/img_5.jpg",
+      thumbnail: "v1646849357/photography/others/f2/img_5.jpg",
     },
     {
       id: 1,
@@ -177,8 +165,7 @@ export const CorporateEvents = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/others/f1/",
       count: 21,
-      thumbnail:
-        "v1646849357/photography/others/f3/img_12.jpg",
+      thumbnail: "v1646849357/photography/others/f1/img_12.jpg",
     },
   ],
 };
@@ -194,8 +181,7 @@ export const Album = {
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/album/",
       count: 9,
-      thumbnail:
-        "v1646849357/photography/album/img_4.jpg",
+      thumbnail: "v1646849357/photography/album/img_4.jpg",
     },
   ],
 };

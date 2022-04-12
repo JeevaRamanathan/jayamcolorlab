@@ -13,10 +13,10 @@
 }
 
 .homeImg {
-  /* background: url("./th.jpg") center fixed; */
+  background: url("./th.jpg") center fixed;
 }
 .countImg {
-  /* background: url("./count.jpg") center fixed; */
+  background: url("./count.jpg") center fixed;
 }
 
 .iconColor {

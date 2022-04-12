@@ -62,7 +62,7 @@ export default function Birthday(props) {
                         cldImg={cldn.image(
                           `${BD.images[index].thumbnail}`
                         )}
-                        plugins={[responsive({ steps: 200 })]}
+                        plugins={[responsive({steps: [800, 1000, 1400]})]} 
                       />
                       <div class="middle">
                         <div class="imgText">{data.title}</div>
