@@ -7,14 +7,14 @@ export default function Videography() {
       <div className="container pt-4">
         <span className="headingText">Wedding Flims</span>
         <div className="bodyText mt-3 mb-4">
-          {/* Here we make a glimpse video of the whole event covering all the
-          highlighted moments. Here are some of them!{" "} */}
+        
           Wedding videography tells the story of your marriage day which is a
           long lasting memory. Our video cameras are of high definition to
           capture all emotions and happiness and present them in a cinematic way
-          with our expertise works. In addition we also provide glimpse video of
-          the whole event covering all the highlighted moments and candid shots
-          with feel good music in background which adds joy to the video.
+          with our expertise works. In addition, we also provide glimpse video
+          of the whole event covering all the highlighted moments and candid
+          shots with feel good music in the background which adds joy to the
+          video.
         </div>
 
         <a

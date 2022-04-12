@@ -5,7 +5,7 @@
   cursor: pointer;
   font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: "Oswald", sans-serif; */
+
   transition: transform 0.5s ease;
 }
 
@@ -15,7 +15,6 @@
   cursor: pointer;
   font-size: 15px;
   font-family: "Josefin Sans", sans-serif;
-  /* font-family: "Oswald", sans-serif; */
 }
 
 .homeBox:hover {
@@ -26,7 +25,7 @@
   align-items: center;
   cursor: pointer;
   color: #2b394a;
-  /* font-family: 'Josefin Sans', sans-serif; */
+
   font-family: "Oswald", sans-serif;
   transition: transform 0.5s ease;
 }
@@ -65,7 +64,6 @@
   bottom: 0;
   left: 23%;
 
-  /* background-color: #ff7000; */
   background: #ee0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -87,7 +85,6 @@
   bottom: 0;
   left: 23%;
 
-  /* background-color: #ff7000; */
   background: #ee0979; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,

@@ -1,25 +1,15 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Slider.css";
-import BtnSlider from "./BtnSlider";
 import dataSlider from "./dataSlider";
 
 export default function Slider() {
   const [slideIndex, setSlideIndex] = useState(1);
-  const [image, setImage] = useState("");
 
   const nextSlide = () => {
     if (slideIndex !== dataSlider.length) {
       setSlideIndex(slideIndex + 1);
     } else if (slideIndex === dataSlider.length) {
       setSlideIndex(1);
-    }
-  };
-
-  const prevSlide = () => {
-    if (slideIndex !== 1) {
-      setSlideIndex(slideIndex - 1);
-    } else if (slideIndex === 1) {
-      setSlideIndex(dataSlider.length);
     }
   };
 
@@ -43,15 +33,12 @@ export default function Slider() {
             key={index}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
-            {/* {w(`post${index + 1}.jpg`)} */}
-            <img id="img" src={`post${index + 1}.jpg`} />
-            {/* <p className="homeImgText">Wedding Photgraphy</p> */}
+            Some Random Images
+            {/* <img id="img" src={obj.url} /> */}
           </div>
         );
       })}
-      {/* post${index + 1} */}
-      {/* <BtnSlider moveSlide={nextSlide} direction={"next"} />
-      <BtnSlider moveSlide={prevSlide} direction={"prev"} /> */}
+
       <p className="slider-text"></p>
 
       <div className="container-dots" style={{ cursor: "pointer" }}>

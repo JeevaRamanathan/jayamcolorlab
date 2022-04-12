@@ -44,7 +44,7 @@ const NavBar = (props) => {
       >
         <div className="container">
           <Link to="/">
-            <img src="/jcllogo.png" style={{ height: "40px" }} alt="Logo" />
+            <img src="/jcllogo1.png" style={{ height: "40px" }} alt="Logo" />
           </Link>
           <div
             className="navbar-toggler"
@@ -67,9 +67,7 @@ const NavBar = (props) => {
                 <li
                   key="home"
                   onClick={() => closeNav("home")}
-                  // className={`nav-item hover-underline-animation new ${
-                  //   value == "home" ? "hover-underline-animation1 new1" : ""
-                  // }`}
+                  
                   className={`nav-item hover-underline-animation new ${
                     window.location.pathname === "/"
                       ? "hover-underline-animation1 new1"
@@ -111,30 +109,7 @@ const NavBar = (props) => {
               </Link>
             </ul>
 
-            {/* <ul className="navbar-nav ml-auto">
-              <Link to="/services">
-                <li
-                  key="services"
-                  onClick={() => closeNav("services")}
-                  className={`nav-item hover-underline-animation new
-              ${
-                window.location.pathname === "/services"
-                  ? "hover-underline-animation1 new1"
-                  : ""
-              }`}
-                >
-                  <span
-                    className="nav-link"
-                    style={{
-                      color: "white",
-                    }}
-                  >
-                    Services
-                  </span>
-                </li>
-              </Link>
-            </ul> */}
-
+       
             <ul
               className="navbar-nav ml-auto dropdown"
               onMouseOver={() => setGalleryExpanded(false)}
@@ -172,21 +147,22 @@ const NavBar = (props) => {
                       setGalleryExpanded(true);
                       closeNav("gallery");
                     }}
-                    to="/gallery/wedding"
+                    to="/gallery/chettinadWedding"
                   >
-                    <span className="dropdown-item">Wedding</span>
-                    <hr className="p-0 m-0" color="white" />{" "}
+                    <span className="dropdown-item">Chettinad Wedding</span>
+                    <hr className="p-0 m-0" color="white" />
                   </Link>
                   <Link
                     onClick={() => {
                       setGalleryExpanded(true);
                       closeNav("gallery");
                     }}
-                    to="/gallery/chettinadWedding"
+                    to="/gallery/wedding"
                   >
-                    <span className="dropdown-item">Chettinad Wedding</span>
-                    <hr className="p-0 m-0" color="white" />
+                    <span className="dropdown-item">Other Weddings</span>
+                    <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
+
                   <Link
                     onClick={() => {
                       {
@@ -224,7 +200,7 @@ const NavBar = (props) => {
                     }}
                     to="/gallery/bday"
                   >
-                    <span className="dropdown-item">Birthday</span>
+                    <span className="dropdown-item">Birthday and Puberty</span>
                     <hr className="p-0 m-0" color="white" />{" "}
                   </Link>
                   <Link

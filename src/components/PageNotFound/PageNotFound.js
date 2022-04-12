@@ -3,14 +3,9 @@ import pagenotfound from "../lotties/pagenotfound.json";
 import Lottie from "lottie-react";
 import {Link } from 'react-router-dom'
 export default class PageNotFound extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      x: 0,
-    };
-  }
 
-  componentDidMount() {}
+
+ 
 
   render() {
     return (

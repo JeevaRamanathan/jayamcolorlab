@@ -1,6 +1,5 @@
 import "./footer.css";
-import { Link } from "react-router-dom";
-import FadeInSection from "../../FadeInSection";
+
 import { BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 export default function Footer() {
@@ -28,13 +27,13 @@ export default function Footer() {
                 target={"_blank"}
               >
                 {" "}
-                A-63, St.Joseph Complex Chatiram Bus Stand, Trichy - 02 | 
+                A-63, St.Joseph Complex Chatiram Bus Stand, Trichy - 02 |
               </a>
               <a
                 style={{ textDecoration: "none", color: "white" }}
                 href="tel:+919486491801"
               >
-               {"  "} +91 94864 91801 |{" "}
+                {"  "} +91 94864 91801 |{" "}
               </a>
               <a
                 style={{ textDecoration: "none", color: "white" }}
@@ -100,8 +99,8 @@ export default function Footer() {
             </span>
             <div className="footerText mt-2 ">
               {" "}
-              copyright &#169; 2022 Jayam Color Lab | With ❤️ Designed by Jayam
-              Color Lab
+              copyright &#169; {new Date().getFullYear()} Jayam Color Lab | With
+              ❤️ Designed by Jayam Color Lab
             </div>{" "}
           </div>
         </div>

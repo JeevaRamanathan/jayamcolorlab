@@ -5,6 +5,16 @@ import Nodata from "../lotties/nodata.json";
 import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
+import { AdvancedImage, responsive } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+
+const cldn = new Cloudinary({
+  cloud: {
+    cloudName: "ddhcbvm5d",
+  },
+  type: "authenticated",
+});
+
 
 export default function Birthday(props) {
   const navigate = useNavigate();
@@ -34,17 +44,25 @@ export default function Birthday(props) {
                       className="card cont img-hover-zoom img-hover-zoom--slowmo mb-3"
                       style={{ border: "none" }}
                     >
-                      <img
+                      {/* <img
                         className="galleryImg"
                         height={500}
                         width={700}
                         style={{ objectFit: "cover" }}
                         src={
-                          // window.location.origin +
-                          // "/" +
                           process.env.PUBLIC_URL + BD.images[index].thumbnail
                         }
                         alt="Image"
+                      /> */}
+                       <AdvancedImage
+                        className="galleryImg"
+                        height={500}
+                        width={700}
+                        style={{ objectFit: "cover" }}
+                        cldImg={cldn.image(
+                          `${BD.images[index].thumbnail}`
+                        )}
+                        plugins={[responsive({ steps: 200 })]}
                       />
                       <div class="middle">
                         <div class="imgText">{data.title}</div>
@@ -56,7 +74,6 @@ export default function Birthday(props) {
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
                       >
-                        {data.title}
                         {data.title} / {data.location}
                       </div>
                     </div>

@@ -1,10 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-/* @import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lightgallery.css");
-@import url("https://cdn.jsdelivr.net/npm/lightgallery@2.0.0-beta.4/css/lg-zoom.css"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap") */
+
 .headingText {
-  /* font-family: "Raleway", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica,
-    Arial, sans-serif; */
   font-family: "Satisfy", cursive;
   font-size: 25px;
   font-weight: 560;
@@ -29,8 +25,6 @@
 }
 
 .bodyText {
-  /* font-family: "Josefin Sans", sans-serif; */
-  /* font-family: "Open Sans"; */
   font-family: "Josefin Sans", sans-serif;
   font-size: 15px;
   text-align: justify;
@@ -41,27 +35,10 @@
   cursor: pointer;
 }
 
-/* .img-hover-zoom {
-  transform-origin: 50% 65%;
-  transition: transform 5s, filter 3s ease-in-out;
-}
-
-.img-hover-zoom:hover {
-  filter: brightness(100%);
-  transform: scale(3);
-} */
-
 .img-hover-zoom {
-  /* height: 300px; [1.1] Set it as per your need */
-  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+  overflow: hidden;
 }
 
-/* [2] Transition property for smooth transformation of images */
-.img-hover-zoom img {
-  /* transition: transform 1s ease; */
-}
-
-/* [3] Finally, transforming the image when container gets hovered */
 .img-hover-zoom:hover img {
   transform: scale(1.2);
 }
@@ -69,13 +46,10 @@
 .img-hover-zoom--slowmo img {
   transform-origin: 50% 55%;
   transition: transform 5s, filter 1s ease-in-out;
-  /* filter: brightness(150%); */
 }
 
-/* The Transformation */
 .img-hover-zoom--slowmo:hover img {
   filter: brightness(105%);
-  /* transform: scale(1.4); */
 }
 
 .imgText {
@@ -231,16 +205,9 @@
   padding: 0px;
 }
 
-/* .pswp img {
-  max-width: none;
-  object-fit: contain !important;
-
-} */
-
 .pswp img {
   object-fit: contain !important;
-  /* max-height: 400px !important; */
-  /* max-width: auto !important; */
+
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -259,8 +226,6 @@
 }
 
 .galleryHeadingText {
-  /* font-family: "Raleway", "Open Sans", "Helvetica Neue", "Helvetica", Helvetica,
-    Arial, sans-serif; */
   font-family: "Satisfy", cursive;
   font-size: 25px;
   font-weight: 560;

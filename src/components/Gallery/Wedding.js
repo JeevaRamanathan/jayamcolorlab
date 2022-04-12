@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import "./gallery.css";
 import Lottie from "lottie-react";
 import Nodata from "../lotties/nodata.json";
 import { useNavigate } from "react-router-dom";
-import {  wedding } from "./GalleryData";
+import { wedding } from "./GalleryData";
+import { AdvancedImage, responsive } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+
+const cldn = new Cloudinary({
+  cloud: {
+    cloudName: "ddhcbvm5d",
+  },
+  type: "authenticated",
+});
+
 export default function Wedding(props) {
   const navigate = useNavigate();
 
@@ -32,18 +42,28 @@ export default function Wedding(props) {
                       className="card cont img-hover-zoom img-hover-zoom--slowmo mb-3"
                       style={{ border: "none" }}
                     >
-                      <img
+                      {/* <img
                         className="galleryImg"
                         height={500}
                         width={700}
                         style={{ objectFit: "cover" }}
                         src={
-                          // window.location.origin +
-                          // "/" +
+                         
                           process.env.PUBLIC_URL +
                           wedding.images[index].thumbnail
                         }
                         alt="Image"
+                      /> */}
+
+                      <AdvancedImage
+                        className="galleryImg"
+                        height={500}
+                        width={700}
+                        style={{ objectFit: "cover" }}
+                        cldImg={cldn.image(
+                          `${wedding.images[index].thumbnail}`
+                        )}
+                        plugins={[responsive({ steps: 200 })]}
                       />
                       <div className="middle">
                         <div className="imgText">{data.title}</div>
@@ -55,7 +75,7 @@ export default function Wedding(props) {
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
                       >
-                        {data.title}
+                        {data.title}/{data.location}
                       </div>
                     </div>
                   </div>

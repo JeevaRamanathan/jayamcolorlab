@@ -8,13 +8,10 @@ import { BsFillTelephonePlusFill } from "react-icons/bs";
 import { BsYoutube, BsInstagram, BsFacebook } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
 import { Formik, Form } from "formik";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FontAwesome from "react-fontawesome";
-// import faStyles from "font-awesome/css/font-awesome.css";
+
 import * as yup from "yup";
-// import { send } from "emailjs-com";
-// import emailjs from "@emailjs/browser";
-import emailjs, { send, init } from "emailjs-com";
+
+import emailjs, { init } from "emailjs-com";
 init("ZmZ4zmVufXLUa9Oad");
 
 export default class Contact extends React.Component {
@@ -36,8 +33,6 @@ export default class Contact extends React.Component {
 
     return (
       <React.Fragment>
-        {/* <NavBar active={"contact"} /> */}
-        {/* <img className="d" src="cam2.jpg" /> */}
         <section>
           <div style={{ height: "5rem" }}></div>
 
@@ -87,10 +82,6 @@ export default class Contact extends React.Component {
                   >
                     &nbsp;{"        "} 0431 2706519
                   </a>
-                  {/* <FontAwesomeIcon icon="fa-duotone fa-phone-office">
-
-                  </FontAwesomeIcon> */}
-                  {/* 0431 2706519 */}
                 </span>
                 <hr />
                 <p className="contactText">Email</p>
@@ -209,16 +200,14 @@ export default class Contact extends React.Component {
                             (error) => {
                               this.setState({
                                 errorMessage:
-                                  "Sorry! Something went wrong, Check the details entered or try after sometime!",
+                                  "Sorry for Inconvenience! Something went wrong, Check the details entered or try after sometime or connect with us immediately whatsapp!",
                                 successMessage: "",
                                 sending: false,
                               });
                             }
                           );
-                        // this.SendEmail(values);
                       }}
                     >
-                      {/* {({formik, errors, handleChange, touched }) => ( */}
                       {(formik) => (
                         <Form>
                           <TextField

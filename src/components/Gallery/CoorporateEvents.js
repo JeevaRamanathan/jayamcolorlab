@@ -5,6 +5,15 @@ import Nodata from "../lotties/nodata.json";
 import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
+import { AdvancedImage, responsive } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+
+const cldn = new Cloudinary({
+  cloud: {
+    cloudName: "ddhcbvm5d",
+  },
+  type: "authenticated",
+});
 
 export default function CorporateEvents(props) {
   const navigate = useNavigate();
@@ -34,7 +43,7 @@ export default function CorporateEvents(props) {
                       className="card cont img-hover-zoom img-hover-zoom--slowmo mb-3"
                       style={{ border: "none" }}
                     >
-                      <img
+                      {/* <img
                         className="galleryImg"
                         height={500}
                         width={700}
@@ -45,6 +54,15 @@ export default function CorporateEvents(props) {
                           process.env.PUBLIC_URL + CE.images[index].thumbnail
                         }
                         alt="Image"
+                      /> */}
+
+                      <AdvancedImage
+                        className="galleryImg"
+                        height={500}
+                        width={700}
+                        style={{ objectFit: "cover" }}
+                        cldImg={cldn.image(`${CE.images[index].thumbnail}`)}
+                        plugins={[responsive({ steps: 200 })]}
                       />
                       <div className="middle">
                         <div className="imgText">{data.title}</div>
@@ -56,7 +74,6 @@ export default function CorporateEvents(props) {
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
                       >
-                        {data.title}
                         {data.title} / {data.location}
                       </div>
                     </div>

@@ -1,26 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import "./about.css";
 import FadeInSection from "../../FadeInSection";
 import Lottie from "lottie-react";
 import animationData from "../lotties/studio";
-import NavBar from "../NavBar/NavBar";
 
 export default class About extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      x: 0,
-    };
-  }
-  componentDidMount() {}
-
   render() {
     return (
       <React.Fragment>
-        {/* <NavBar active={"about"} /> */}
-
         <img className="d" src="cam.jpg" />
         <FadeInSection>
           <div style={{ height: "0rem" }}> </div>
@@ -32,19 +19,17 @@ export default class About extends React.Component {
                 </h2>
 
                 <div className="abouttext pt-3">
-                  {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
                   Jayam Color Lab & Studio was established in the year of 2004
-                  in Trichy and owned by Mr.Muthu Ram Bhuvaneswari who is
+                  in Trichy and owned by Mr.Muthu Ram & Bhuvaneswari. We are
                   experienced in the photography field for more than 18 years.
                   We are specialized in wedding photography, studio photography,
                   designing.
                   <br />
                   <br />
-                  {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
                   Life brings tears, smiles, and memories. The tears dry, the
-                  smiles fade, but the memories last forever.We are here to
+                  smiles fade, but the memories last forever. We are here to
                   capture all your amazing live moments and make it memorable
-                  through our photography and vidography. It won't stop here on
+                  through our photography and videography. It won't stop here on
                   covering the events, we further polish it with editor's work
                   and the final product will be attractive and in a professional
                   level in a short period of time. We capture you the moment
@@ -52,12 +37,11 @@ export default class About extends React.Component {
                   life long.
                   <br />
                   <br />
-                  {/* &nbsp;&nbsp;&nbsp;&nbsp; */}
                   We respect your thoughts and we do give our best services. We
                   undertake all kinds of events like wedding, engagement, baby
-                  shoot, birthday, coorporate meetings and all other events. We
-                  also do album editing, designing photos, flex editing, collage
-                  work and so on.
+                  shoot, birthday, corporate meetings and all other events. We
+                  also do album editing, frame, designing photos, flex editing,
+                  collage work and so on.
                   <hr />
                   <center>
                     <b>
@@ -89,15 +73,11 @@ export default class About extends React.Component {
                   </div>
                   <div className="card-body">
                     <p className="card-text homeBox2">
-                      {/* We follow our unique photography style in the current
-                      trend, everyone having the camera can take photos but we
-                      are professional in that having experience knowing the
-                      best angles and shots to get the outcome more perfect :) */}
                       We follow our unique photography style in the current
                       trend. Anyone can capture the photo, but only
-                      professionals and experience can make best angles and
-                      shots. In this context we are experienced in capturing the
-                      right moments in right angles and makes the outcome
+                      professionals and experienced can make best angles and
+                      shots. In this context, we are experienced in capturing
+                      the right moments in right angles and makes the outcome
                       perfect :)
                     </p>
                   </div>
@@ -117,9 +97,9 @@ export default class About extends React.Component {
                   </div>
                   <div className="card-body">
                     <p className="card-text homeBox2">
-                      We use the modern camera equipments with tripod,
-                      lightstand, zooming lens, studio strobes and umbrellas and
-                      all the necessary equipments.
+                      We use the modern camera equipments with tripod, light
+                      stand, zooming lens, studio strobes and umbrellas and all
+                      the necessary equipments.
                     </p>
                   </div>
                 </div>
@@ -137,8 +117,8 @@ export default class About extends React.Component {
                   </div>
                   <div className="card-body">
                     <p className="card-text homeBox2">
-                      When it comes to budget, we do in a most affordable cost
-                      depending upon the type of package that suits you!
+                      When it comes to budget, we do it at a more affordable
+                      cost depending upon the type of package that suits you!
                     </p>
                   </div>
                 </div>

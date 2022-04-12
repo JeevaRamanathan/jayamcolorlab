@@ -1,6 +1,5 @@
 import React from "react";
 import "./services.css";
-import { Link } from "react-router-dom";
 
 import Lottie from "lottie-react";
 import camera from "../lotties/camera";
@@ -9,21 +8,10 @@ import editor from "../lotties/editor";
 import frame from "../lotties/frame";
 
 export default class Services extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      x: 0,
-    };
-  }
-
-  componentDidMount() {}
-
   render() {
     return (
       <>
         <React.Fragment>
-          {/* {this.props.home == "false" ? null : <NavBar active={"services"} />} */}
-
           <div className="container contain ">
             {" "}
             <h4 className="welcometext">What We Do</h4>
@@ -49,16 +37,6 @@ export default class Services extends React.Component {
                         Engagement, Puberty, Corporate Events, Family Events and
                         so on...
                       </p>
-                      {/* <Link className="mt-auto" to="/gallery/photography">
-                        <span
-                          className="btn  mt-auto viewbtn align-self-center"
-                          style={{
-                            color: "whitesmoke",
-                          }}
-                        >
-                          View Gallery
-                        </span>
-                      </Link> */}
                     </div>
                   </div>
                 </div>
@@ -77,8 +55,8 @@ export default class Services extends React.Component {
                     </h6>
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4">
-                        A event doesn't end just with a photoshoot, videos
-                        brings us the moment live before our eyes. We do also
+                        An event doesn't end just with a photoshoot, videos
+                        bring us the moment live before our eyes. We do also
                         capture videos for all the events in a professional way.
                         <br />
                         <br />
@@ -86,15 +64,6 @@ export default class Services extends React.Component {
                         video with the candid shots and a music that makes you
                         the event memorable and brings you joy.
                       </p>
-                      {/* <div
-                        className="btn viewbtn mt-auto align-self-center"
-                        style={{
-                         
-                          color: "whitesmoke",
-                        }}
-                      >
-                        View Gallery
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -115,21 +84,13 @@ export default class Services extends React.Component {
                         There is no limit to the effects that can be brought
                         about in a simple photograph. You can make any event
                         look and feel more vibrant, fun and appealing with photo
-                        editing. We edit those captures and present you the
-                        final Album which will be with you forever. <br />
-                        <br /> Also we fix the damaged old photos and bring
+                        editing. We edit those captures beautifully, and present
+                        you the final Album which will be with you forever.{" "}
+                        <br />
+                        <br /> Also, we fix the damaged old photos and bring
                         color to b/w photographs, flex editing, collage and
                         etc., at affordable cost in our studio.
                       </p>
-                      {/* <div
-                        className="btn viewbtn mt-auto align-self-center"
-                        style={{
-                          // backgroundColor: "#ff7000",
-                          color: "whitesmoke",
-                        }}
-                      >
-                        View Gallery
-                      </div> */}
                     </div>
                   </div>
                 </div>
@@ -150,25 +111,15 @@ export default class Services extends React.Component {
                     <div className="card-body d-flex flex-column">
                       <p className="card-text mb-4">
                         Framing some important memories in wall makes that
-                        moment more memorable. We have wide variety of gift
+                        moment more memorable. We have a wide variety of gift
                         items that you can choose as a present for your loved
                         ones at affordable price.
                         <br />
                         <br />
-                        {/* We do services all around the India and just whatsapp or */}
-                        Our services is extended all around the India and just whatsapp or
-                        email us, we will deliver the frame and gift items at
-                        your doorstep.
+                        Our services are extended all around the India and just
+                        Whatsapp or email us, we will deliver the frame and gift
+                        items at your doorstep.
                       </p>
-                      {/* <div
-                        className="btn viewbtn mt-auto align-self-center"
-                        style={{
-                          // backgroundColor: "#ff7000",
-                          color: "whitesmoke",
-                        }}
-                      >
-                        View Gallery
-                      </div> */}
                     </div>
                   </div>
                 </div>

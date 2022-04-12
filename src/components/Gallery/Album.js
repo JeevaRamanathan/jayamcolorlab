@@ -5,6 +5,15 @@ import Nodata from "../lotties/nodata.json";
 import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
+import { AdvancedImage, responsive } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+
+const cldn = new Cloudinary({
+  cloud: {
+    cloudName: "ddhcbvm5d",
+  },
+  type: "authenticated",
+});
 
 export default function Album(props) {
   const navigate = useNavigate();
@@ -14,8 +23,11 @@ export default function Album(props) {
       <div style={{ marginTop: "4rem" }}>
         <div className="container pt-4">
           <span className="headingText">{AB["title"]} </span>
-          {/* <div className="bodyText mt-3 mb-4">{AB.body} </div> */}
-          <div className="row">
+          <div className="bodyText mt-3 mb-4">{AB.body} </div>
+          <p className="d-flex justify-content-center videoText">
+            Have a look at some random slides of our albums{" "}
+          </p>
+          <div className="row-12">
             {AB.images.length > 0 ? (
               AB.images.map((data, index) => {
                 return (
@@ -28,37 +40,39 @@ export default function Album(props) {
                         },
                       })
                     }
-                    className="col-lg-6 col-md-6 mb-3 d-flex "
+                    className="col mb-3 d-flex "
                   >
                     <div
                       className="card cont img-hover-zoom img-hover-zoom--slowmo mb-3"
                       style={{ border: "none" }}
                     >
-                      <img
+                      {/* <img
                         className="galleryImg"
                         height={500}
                         width={700}
                         style={{ objectFit: "cover" }}
                         src={
-                          // window.location.origin +
-                          // "/" +
+                        
                           process.env.PUBLIC_URL + AB.images[index].thumbnail
                         }
                         alt="Image"
+                      /> */}
+                      <AdvancedImage
+                        className="galleryImg"
+                        height={500}
+                        width={700}
+                        style={{ objectFit: "cover" }}
+                        cldImg={cldn.image(`${AB.images[index].thumbnail}`)}
+                        plugins={[responsive({ steps: 200 })]}
                       />
                       <div class="middle">
-                        <div class="imgText">{data.title}</div>
                         <br />
-                        <div class="locationText">{data.location}</div>
                       </div>
                       <div
                         class="hiddenText"
                         id="hide"
                         style={{ color: "black", textAlign: "center" }}
-                      >
-                        {data.title}
-                        {data.title} / {data.location}
-                      </div>
+                      ></div>
                     </div>
                   </div>
                 );

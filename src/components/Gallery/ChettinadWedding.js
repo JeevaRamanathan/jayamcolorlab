@@ -5,7 +5,17 @@ import "./gallery.css";
 
 import { useNavigate } from "react-router-dom";
 import { ChettinadWedding as CW } from "./GalleryData";
-import { thumbnail } from "@cloudinary/url-gen/actions/resize";
+
+import { AdvancedImage, responsive } from "@cloudinary/react";
+import { Cloudinary } from "@cloudinary/url-gen";
+
+const cldn = new Cloudinary({
+  cloud: {
+    cloudName: "ddhcbvm5d",
+  },
+  type: "authenticated",
+});
+
 export default function ChettinadWedding(props) {
   const navigate = useNavigate();
 
@@ -34,17 +44,23 @@ export default function ChettinadWedding(props) {
                       className="card cont img-hover-zoom img-hover-zoom--slowmo mb-3"
                       style={{ border: "none" }}
                     >
-                      <img
+                      {/* <img
                         className="galleryImg"
                         height={500}
                         width={700}
                         style={{ objectFit: "cover" }}
-                        src={
-                          // window.location.origin +
-                          CW.images[index].thumbnail
-                          // process.env.PUBLIC_URL + CW.images[index].thumbnail
-                        }
+                        src={CW.images[index].thumbnail}
                         alt="Image"
+                      /> */}
+                       <AdvancedImage
+                        className="galleryImg"
+                        height={500}
+                        width={700}
+                        style={{ objectFit: "cover" }}
+                        cldImg={cldn.image(
+                          `${CW.images[index].thumbnail}`
+                        )}
+                        plugins={[responsive({ steps: 200 })]}
                       />
                       <div className="middle">
                         <div className="imgText">{data.title}</div>

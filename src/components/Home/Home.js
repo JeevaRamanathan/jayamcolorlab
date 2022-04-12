@@ -7,32 +7,10 @@ import CountUp from "react-countup";
 import FadeInSection from "../../FadeInSection";
 import VisibilitySensor from "react-visibility-sensor";
 import { MdRestore, MdPhotoAlbum } from "react-icons/md";
-import { Link } from "react-router-dom";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 1,
-  },
-};
 
 export default function Home() {
-  // render() {
   return (
     <React.Fragment>
-      {/* <NavBar active={"home"} /> */}
       <Slider />
       <div style={{ height: "91.8vh" }}></div>
       <FadeInSection>
@@ -45,28 +23,35 @@ export default function Home() {
               {" "}
               <br />
               <br />
+              Why Wedding Photography?
               <br />
               <br />
               Weddings are Once in a Lifetime Event, Make them More Memorable
               with Our Photography!{" "}
               <p className="mt-2 homeBox2">
-                A wedding happens only once in a lifetime. It’s an historic day
-                in the lives of the bride and groom, which is why we are so
-                passionate and dedicated to create an unforgettable experience
-                for you with high level professional equipments. Choosing the
-                best Wedding Function photographer is most important.Wedding
-                photography is important because it will capture your day, it
-                will capture your memories, it will tell a story, and not just
-                any story, it will tell a beautiful story of your special day, a
-                day you will never forget. A story that you can show friends and
-                family, your kids, and grandchildren, something you will have
-                and can treasure for ever. <br />
-                So don't wait until your last minute of wedding...Book Us Now!
+                We are professional photographers who capture every part of your
+                wedding day, parts of which you will miss due to greeting
+                guests, touching up makeup, or just checking everything is
+                running smoothly. We deliver professional wedding
+                photography-means you will have high quality images to display
+                in your home, as well as personalized gifts for friends and
+                family. We have plenty of experience, and will be able to get
+                the best images in the simplest, easiest way possible. This
+                takes the stress off your shoulders. If budget is your main
+                concern, don't worry, we do it at a more affordable cost
+                depending upon the type of package that suits you!
               </p>
               <br />
-              {/* <Link to="/contact" style={{textDecoration:"none", border:'none'}} className="btn btn-warning">
+              <p>So don't wait until last minute of wedding...Book Us Now!</p>
+              <br />
+              <a
+                href="https://api.whatsapp.com/send?phone=919486491801&text=Hi, I would like to enquiry about the wedding with you!"
+                target="_blank"
+                style={{ textDecoration: "none", border: "none" }}
+                className="btn btn-warning"
+              >
                 Book Now!
-              </Link> */}
+              </a>
               <br />
               <br />
               <br />
@@ -93,8 +78,6 @@ export default function Home() {
                 <div className="col">
                   <h4 className="homeText2">Restoration of Old Images</h4>
                   <p className="card-text homeText3">
-                    {/* Photographs forever can take a torn or faded and transform */}
-                    {/* it into a beautifully-restored photo, suitable for framing. */}
                     We take your torn or old faded photograhs and transform them
                     into a beautifully restored photo. We preserve your original
                     images by eliminating scratches, folds, tears and fading and
@@ -116,7 +99,7 @@ export default function Home() {
                   ></FaGifts>
                 </div>
                 <div className="col">
-                  <h4 className="homeText2">Personalized Photo Gitfs</h4>
+                  <h4 className="homeText2">Personalized Photo Gifts</h4>
                   <p className="card-text homeText3">
                     Make any occasion special with a personalized gift to your
                     loved ones. You may wonder what gifts can be made from
@@ -152,8 +135,7 @@ export default function Home() {
             </div>
             <div className="col d-flex justify-content-center">
               <img
-                // className="homeH ov"
-                src="homeimg.png"
+                src="homeimg.jpg"
                 style={{ height: "120%", width: "100%", objectFit: "contain" }}
               />
             </div>
@@ -257,13 +239,6 @@ export default function Home() {
                     Events Done
                   </div>
                 </div>
-                {/* <CountUp end={10000} duration={1}>
-                  {({ countUpRef, start }) => (
-                    <VisibilitySensor onChange={start} delayedCall>
-                      <span ref={countUpRef} />
-                    </VisibilitySensor>
-                  )}
-                </CountUp> */}
               </div>
               <br />
               <br />
