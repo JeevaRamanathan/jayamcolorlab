@@ -36,7 +36,7 @@ export const ChettinadWedding = {
       url: "v1646849357/photography/wedding/w2/img_",
       lgUrl:
         "https://res.cloudinary.com/ddhcbvm5d/image/upload/v1648367128/photography/wedding/w2/",
-      count: 12,
+      count: 24,
       thumbnail: "v1646849357/photography/wedding/w2/img_1.jpg",
     },
     {
@@ -68,7 +68,7 @@ export const OtherWedding = {
   images: [
     {
       id: 1,
-      title: "Name & Name",
+      title: "60th Wedding Anniversary",
       location: "Srirangam",
       url: "v1646849357/photography/owedding/w1/img_",
       lgUrl:

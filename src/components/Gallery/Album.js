@@ -17,7 +17,7 @@ const cldn = new Cloudinary({
 
 export default function Album(props) {
   const navigate = useNavigate();
-
+ 
   return (
     <React.Fragment>
       <div style={{ marginTop: "4rem" }}>

@@ -7,9 +7,12 @@ import PPEngagement from "./PPEngagement";
 import Birthday from "./Birthday";
 import CoorporateEvents from "./CoorporateEvents";
 import Album from "./Album";
+import { useEffect } from "react";
 export default function Gallery(params) {
   const { type } = useParams();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   switch (type) {
     case "wedding":
       return <Wedding type={type} />;

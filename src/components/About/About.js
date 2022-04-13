@@ -5,6 +5,9 @@ import Lottie from "lottie-react";
 import animationData from "../lotties/studio";
 
 export default class About extends React.Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <React.Fragment>

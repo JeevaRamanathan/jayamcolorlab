@@ -88,7 +88,7 @@ export default class Services extends React.Component {
                         you the final Album which will be with you forever.{" "}
                         <br />
                         <br /> Also, we fix the damaged old photos and bring
-                        color to b/w photographs, flex editing, collage and
+                        color to b/w photographs, flex editing, collage, VHS to DVD/Pendrive and
                         etc., at affordable cost in our studio.
                       </p>
                     </div>

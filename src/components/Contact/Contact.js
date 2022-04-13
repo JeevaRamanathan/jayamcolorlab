@@ -23,7 +23,11 @@ export default class Contact extends React.Component {
       sending: false,
     };
   }
-  componentDidMount() {}
+  componentDidMount() {
+   
+      window.scrollTo(0, 0);
+  
+  }
   render() {
     let formSchema = yup.object().shape({
       name: yup.string().trim().required("This field is required."),
@@ -67,6 +71,11 @@ export default class Contact extends React.Component {
                     href="tel:+919486491801"
                   >
                     +91 94864 91801
+                  </a> /  <a
+                    style={{ textDecoration: "none", color: "#313131" }}
+                    href="tel:+919443438255"
+                  >
+                    +91 94434 38255
                   </a>
                   <br />
                   <img

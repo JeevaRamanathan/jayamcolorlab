@@ -1,13 +1,16 @@
 import ReactPlayer from "react-player";
 import { BsYoutube } from "react-icons/bs";
 import "./videography.css";
+import { useEffect } from "react";
 export default function Videography() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div style={{ marginTop: "4rem" }}>
       <div className="container pt-4">
         <span className="headingText">Wedding Flims</span>
         <div className="bodyText mt-3 mb-4">
-        
           Wedding videography tells the story of your marriage day which is a
           long lasting memory. Our video cameras are of high definition to
           capture all emotions and happiness and present them in a cinematic way

@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer.js";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 import "./App.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Videography from "./components/Videography/Videography.js";
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
         <a
           href="https://api.whatsapp.com/send?phone=919486491801&text=Hi"
           className="float"
-          style={{textDecoration:"none",color:"white"}}
+          style={{ textDecoration: "none", color: "white" }}
           target="_blank"
         >
           <i className="fa fa-whatsapp my-float"></i>

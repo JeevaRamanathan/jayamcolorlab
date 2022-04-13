@@ -1,5 +1,5 @@
 import "./gallery.css";
-import React from "react";
+import React, {useEffect} from "react";
 import { useLocation } from "react-router-dom";
 import LightGallery from "lightgallery/react";
 import lgZoom from "lightgallery/plugins/zoom";
@@ -26,6 +26,9 @@ export default function DisplayPhotos(props) {
   const { state } = useLocation();
   const navigate = useNavigate();
   state == null && navigate("/home");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div style={{ backgroundColor: "#1a1a1a" }}>
       <div style={{ marginTop: "0rem" }}>

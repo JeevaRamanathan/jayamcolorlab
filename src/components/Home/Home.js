@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 import Slider from "../Carousel/Slider";
 import Services from "../Services/Services";
@@ -9,6 +9,9 @@ import VisibilitySensor from "react-visibility-sensor";
 import { MdRestore, MdPhotoAlbum } from "react-icons/md";
 
 export default function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <React.Fragment>
       <Slider />
