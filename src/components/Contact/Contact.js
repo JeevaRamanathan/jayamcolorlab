@@ -24,9 +24,7 @@ export default class Contact extends React.Component {
     };
   }
   componentDidMount() {
-   
-      window.scrollTo(0, 0);
-  
+    window.scrollTo(0, 0);
   }
   render() {
     let formSchema = yup.object().shape({
@@ -71,7 +69,9 @@ export default class Contact extends React.Component {
                     href="tel:+919486491801"
                   >
                     +91 94864 91801
-                  </a> /  <a
+                  </a>{" "}
+                  /{" "}
+                  <a
                     style={{ textDecoration: "none", color: "#313131" }}
                     href="tel:+919443438255"
                   >
@@ -84,7 +84,6 @@ export default class Contact extends React.Component {
                     height={30}
                     width={30}
                   />
-
                   <a
                     style={{ textDecoration: "none", color: "#313131" }}
                     href="tel:04312706519"
@@ -209,7 +208,7 @@ export default class Contact extends React.Component {
                             (error) => {
                               this.setState({
                                 errorMessage:
-                                   "Sorry for Inconvenience! Something went wrong, Check the details entered or try after sometime otherwise connect with us immediately in Whatsapp!",
+                                  "Sorry for Inconvenience! Something went wrong, Check the details entered or try after sometime otherwise connect with us immediately in Whatsapp!",
                                 successMessage: "",
                                 sending: false,
                               });
