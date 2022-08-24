@@ -56,7 +56,7 @@ export default function DisplayPhotos(props) {
                       src={`${state.data.lgUrl}/img_${index + 1}.jpg`}
                       data-sub-html={`<p style='font-family:Satisfy;font-size:18px;'>${state.data.title}</p>`}
                     >
-                      <div className="hoverGalleryImg">
+                      {/* <div className="hoverGalleryImg"> */}
                         <AdvancedImage
                           className="c"
                           cldImg={cld.image(
@@ -64,7 +64,7 @@ export default function DisplayPhotos(props) {
                           )}
                           plugins={[responsive({steps: [800, 1000, 1400]})]} 
                         />
-                      </div>
+                      {/* </div> */}
                     </a>
                   );
                 })}
