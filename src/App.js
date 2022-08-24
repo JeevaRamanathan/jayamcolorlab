@@ -10,7 +10,7 @@ import Footer from "./components/Footer/Footer.js";
 import PageNotFound from "./components/PageNotFound/PageNotFound";
 
 import "./App.css";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import Videography from "./components/Videography/Videography.js";
 
 function App() {

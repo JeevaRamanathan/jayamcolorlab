@@ -209,7 +209,7 @@ export default class Contact extends React.Component {
                             (error) => {
                               this.setState({
                                 errorMessage:
-                                  "Sorry for Inconvenience! Something went wrong, Check the details entered or try after sometime or connect with us immediately in Whatsapp!",
+                                   "Sorry for Inconvenience! Something went wrong, Check the details entered or try after sometime otherwise connect with us immediately in Whatsapp!",
                                 successMessage: "",
                                 sending: false,
                               });
