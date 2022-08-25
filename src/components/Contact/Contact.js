@@ -216,7 +216,7 @@ export default class Contact extends React.Component {
                             }
                           );
                       }}
-                    > 
+                    >
                       {(formik) => (
                         <Form>
                           <TextField
